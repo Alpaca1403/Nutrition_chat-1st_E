@@ -28,7 +28,7 @@ p { font-weight: 450; }
 .bg-img-half.img-16 { background: url("../img/gallery/img-spash-saludable.jpg"); }
 .bg-img-half.img-17 { background: url("../img/gallery/img-tomates-y-champiñones.jpg"); }
 .bg-img-half.img-18 { background: url("../img/gallery/img-variedad-en-mesa.jpg"); }
-.bg-img-half.img-19 { background: url("../img/gallery/img-zanahorias.jpg"); }
+.bg-img-half.img-19 { background: url("../img/gallery/img-zanahorias.jpg"); } 
 
 .bg-img-half.img-pos-c{ background-position: center; }
 .bg-img-half.img-pos-t{ background-position: top; }
