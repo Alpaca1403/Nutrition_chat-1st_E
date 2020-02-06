@@ -10,25 +10,25 @@ p { font-weight: 450; }
 }
 
 .bg-img-half.img-back { background: url("../img/nutri_back-min.jpg"); }
-.bg-img-half.img-1 { background: url("../img/gallery/img(1).jpg"); }
-.bg-img-half.img-2 { background: url("../img/gallery/img(2).jpg"); }
-.bg-img-half.img-3 { background: url("../img/gallery/img(3).jpg"); }
-.bg-img-half.img-4 { background: url("../img/gallery/img(4).jpg"); }
-.bg-img-half.img-5 { background: url("../img/gallery/img(5).jpg"); }
-.bg-img-half.img-6 { background: url("../img/gallery/img(6).jpg"); }
-.bg-img-half.img-7 { background: url("../img/gallery/img(7).jpg"); }
-.bg-img-half.img-8 { background: url("../img/gallery/img(8).jpg"); }
-.bg-img-half.img-9 { background: url("../img/gallery/img(9).jpg"); }
-.bg-img-half.img-10 { background: url("../img/gallery/img(10).jpg"); }
-.bg-img-half.img-11 { background: url("../img/gallery/img(11).jpg"); }
-.bg-img-half.img-12 { background: url("../img/gallery/img(12).jpg"); }
-.bg-img-half.img-13 { background: url("../img/gallery/img(13).jpg"); }
-.bg-img-half.img-14 { background: url("../img/gallery/img(14).jpg"); }
-.bg-img-half.img-15 { background: url("../img/gallery/img(15).jpg"); }
-.bg-img-half.img-16 { background: url("../img/gallery/img(16).jpg"); }
-.bg-img-half.img-17 { background: url("../img/gallery/img(17).jpg"); }
-.bg-img-half.img-18 { background: url("../img/gallery/img(18).jpg"); }
-.bg-img-half.img-19 { background: url("../img/gallery/img(19).jpg"); }
+.bg-img-half.img-1 { background: url("../img/gallery/img-aceite-oliva.jpg"); }
+.bg-img-half.img-2 { background: url("../img/gallery/img-aguacate.jpg"); }
+.bg-img-half.img-3 { background: url("../img/gallery/img-cesta-con-verduras.jpg"); }
+.bg-img-half.img-4 { background: url("../img/gallery/img-corredora.jpg"); }
+.bg-img-half.img-5 { background: url("../img/gallery/img-ensalada-de-frutas.jpg"); }
+.bg-img-half.img-6 { background: url("../img/gallery/img-gotas-de-leche.jpg"); }
+.bg-img-half.img-7 { background: url("../img/gallery/img-jugo-verde.jpg"); }
+.bg-img-half.img-8 { background: url("../img/gallery/img-mandarinas.jpg"); }
+.bg-img-half.img-9 { background: url("../img/gallery/img-mesa-saludable.jpg"); }
+.bg-img-half.img-10 { background: url("../img/gallery/img-miel.jpg"); }
+.bg-img-half.img-11 { background: url("../img/gallery/img-moras-azules.jpg"); }
+.bg-img-half.img-12 { background: url("../img/gallery/img-moras-y-bayas.jpg"); }
+.bg-img-half.img-13 { background: url("../img/gallery/img-naranja-soda.jpg"); }
+.bg-img-half.img-14 { background: url("../img/gallery/img-nina-y-sandia.jpg"); }
+.bg-img-half.img-15 { background: url("../img/gallery/img-platillos.jpg"); }
+.bg-img-half.img-16 { background: url("../img/gallery/img-spash-saludable.jpg"); }
+.bg-img-half.img-17 { background: url("../img/gallery/img-tomates-y-champiñones.jpg"); }
+.bg-img-half.img-18 { background: url("../img/gallery/img-variedad-en-mesa.jpg"); }
+.bg-img-half.img-19 { background: url("../img/gallery/img-zanahorias.jpg"); }
 
 .bg-img-half.img-pos-c{ background-position: center; }
 .bg-img-half.img-pos-t{ background-position: top; }
