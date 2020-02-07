@@ -27,29 +27,30 @@
     <nav id="theme" class="navbar navbar-expand-md nav-back sticky-top navbar-light bg-dark py-2 mx-auto w-75">
         <div class="container">
             <a class="navbar-brand" href="../index.html">Vita <i class="fas fa-leaf"></i></a>
-            <button class="navbar-toggler navbar-toggler-right border-0 rotated" type="button" data-toggle="collapse"
+            <button id="btn1" class="navbar-toggler navbar-toggler-right border-0 rotated" type="button" data-toggle="collapse"
                 data-target="#navbar1">
                 <span><i class="fas fa-chevron-circle-down"></i></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbar1">
                 <ul class="navbar-nav ml-auto">
-                    <div class="nav-item active hvr">
+                    <div class="nav-item active hvr d-md-block d-none">
                         <a class="nav-link" href="../index.html"> <b>Inicio</b> </a>
                     </div>
 
-                    <div class="nav-item dropdown active">
-                        <a class="nav-link hvr rotated categories-dropdown a-hover" href="#" id="navbardrop" data-toggle="collapse"
-                            data-target="#menu1"> <b>Nutrición</b> <i class="fas fa-chevron-circle-down"></i></a>
+                    <div class="nav-item dropdown active d-md-block d-none"> <!-- 1 -->
+                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop" href="#"
+                            data-toggle="collapse" data-target=".menu1"> <b>Nutrición</b> <iclass="fas fa-chevron-circle-down"></i></a>
 
                         <div class="collapse dropdown dropdown-md-absolute" id="menu1">
                             <a class="dropdown-item hvr py-2" href="#">Recetas</a>
                             <a class="dropdown-item hvr py-2" href="#">Estilo de vida</a>
-                            <a class="nav-link hvr rotated categories-dropdown a-hover" href="#" id="subnavbardrop" data-toggle="collapse"
-                                data-target="#subMenu1"> <span><b>Etapas</b></span> <i class="fas fa-chevron-circle-down"></i></a>
+                            <a class="nav-link hvr rotated categories-dropdown a-hover subnavbardrop" href="#"
+                                data-toggle="collapse" data-target=".subMenu1"> <span><b>Etapas</b></span> <i
+                                    class="fas fa-chevron-circle-down"></i></a>
 
-                            <div class="collapse dropdown dropdown-md-absolute mt-md-1" id="subMenu1">
-                                <a class="dropdown-item hvr py-2" href="#">Niñez</a>
+                            <div class="collapse dropdown dropdown-md-absolute mt-md-1 subMenu1">
+                                <a class="dropdown-item hvr py-2" href="../nutricion/nutricion-peques.html">Niñez</a>
                                 <a class="dropdown-item hvr py-2" href="#">Adolescencia</a>
                                 <a class="dropdown-item hvr py-2" href="#">Adultez</a>
                                 <a class="dropdown-item hvr py-2" href="#">Embarazo</a>
@@ -58,24 +59,104 @@
                         </div>
                     </div>
 
-                    <div class="nav-item dropdown active">
-                        <a class="nav-link hvr rotated categories-dropdown a-hover" href="#" id="navbardrop2" data-toggle="collapse"
-                            data-target="#menu2"> <b>Intereses</b> <i class="fas fa-chevron-circle-down"></i></a>
+                    <div class="nav-item dropdown active d-md-block d-none"> <!-- 1 -->
+                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop2" href="#"
+                            data-toggle="collapse" data-target=".menu2"> <b>Intereses</b> <i
+                                class="fas fa-chevron-circle-down"></i></a>
 
                         <div class="collapse dropdown dropdown-md-absolute" id="menu2">
-                            <a class="dropdown-item hvr py-2" href="#">El Diario de <span class="font-italic">Vita</span></a>
+                            <a class="dropdown-item hvr py-2" href="#">El Diario de <span
+                                    class="font-italic">Vita</span></a>
                             <a class="dropdown-item hvr py-2" href="../interes/gallery-1.html">Galería</a>
                         </div>
                     </div>
 
-                    <div class="nav-item dropdown active">
-                        <a class="nav-link hvr rotated categories-dropdown a-hover" href="#" id="navbardrop3" data-toggle="collapse"
-                            data-target="#menu3"> <b>Nosotros</b> <i class="fas fa-chevron-circle-down"></i></a>
+                    <div class="nav-item dropdown active d-md-block d-none"> <!-- 1 -->
+                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop3" href="#"
+                            data-toggle="collapse" data-target=".menu3"> <b>Nosotros</b> <i
+                                class="fas fa-chevron-circle-down"></i></a>
 
                         <div class="collapse dropdown dropdown-md-absolute" id="menu3">
                             <a class="dropdown-item hvr py-2" href="../nosotros/about.html">Acerca</a>
                             <a class="dropdown-item hvr py-2" href="#">Filosofía</a>
                             <a class="dropdown-item hvr py-2" href="../nosotros/schedule.html">Horarios</a>
+                        </div>
+                    </div>
+
+                    <div class="container d-md-none text-center p-0">
+                        <div class="nav-item active hvr row w-100 like-button m-0">
+                            <a class="nav-link col-12 p-0" href="../index.html">
+                                <div class="container pt-2">
+                                    <i class="fas fa-home fa-2x col-12"></i> <b class="col-12">Inicio</b>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="row w-100 like-button m-0">
+                            <div class="nav-item dropdown active col-6 p-0"> <!-- 2 -->
+                                <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop" href="#"
+                                    data-toggle="collapse" data-target=".menu1">
+                                    <div class="container pt-2">
+                                        <i class="fas fa-apple-alt fa-2x col-12 p-0"></i> <b class="col-12 p-0">Nutrición</b>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nav-item dropdown active col-6 p-0"> <!-- 2 -->
+                                <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop2" href="#"
+                                    data-toggle="collapse" data-target=".menu2"> 
+                                    <div class="container pt-2">
+                                        <i class="fas fa-book fa-2x col-12 p-0"></i> <b class="col-12 p-0">Intereses</b>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row w-100 m-0"> <!-- 2 row -->
+                            <div class="collapse dropdown dropdown-md-absolute col-12 menu1">
+                                <a class="dropdown-item hvr py-2" href="#">Recetas</a>
+                                <a class="dropdown-item hvr py-2" href="#">Estilo de vida</a>
+                                <a class="nav-link hvr rotated categories-dropdown a-hover subnavbardrop" href="#"
+                                    data-toggle="collapse" data-target=".subMenu1"> <span><b>Etapas</b></span> 
+                                    <i class="fas fa-chevron-circle-down"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row w-100 m-0">
+                            <div class="collapse dropdown dropdown-md-absolute col-12 menu2">
+                                <a class="dropdown-item hvr py-2" href="#">El Diario de <span class="font-italic">Vita</span>
+                                </a>
+                                <a class="dropdown-item hvr py-2" href="../interes/gallery-1.html">Galería</a>
+                            </div>
+                        </div>
+
+                        <div class="row w-100 m-0"> <!-- 3? row -->
+                            <div class="collapse dropdown dropdown-md-absolute mt-md-1 col-12 subMenu1">
+                                <a class="dropdown-item hvr py-2" href="../nutricion/nutricion-peques.html">Niñez</a>
+                                <a class="dropdown-item hvr py-2" href="#">Adolescencia</a>
+                                <a class="dropdown-item hvr py-2" href="#">Adultez</a>
+                                <a class="dropdown-item hvr py-2" href="#">Embarazo</a>
+                                <a class="dropdown-item hvr py-2" href="#">3ra Edad</a>
+                            </div>
+                        </div>
+    
+                        <div class="row w-100 like-button m-0 text-center"> <!-- 4 row -->
+                            <div class="nav-item dropdown active col-12 p-0">
+                                <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop3" href="#"
+                                    data-toggle="collapse" data-target=".menu3"> 
+                                    <span class="container pt-2">
+                                        <i class="fas fa-users fa-2x col-12 p-0"></i> <b class="col-12 p-0">Nosotros</b>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row w-100 m-0 pt-2"> <!-- 5 row -->
+                            <div class="collapse dropdown dropdown-md-absolute col-12 menu3">
+                                <a class="dropdown-item hvr py-2" href="../nosotros/about.html">Acerca</a>
+                                <a class="dropdown-item hvr py-2" href="#">Filosofía</a>
+                                <a class="dropdown-item hvr py-2" href="../nosotros/schedule.html">Horarios</a>
+                            </div>
                         </div>
                     </div>
                 </ul>
@@ -241,6 +322,7 @@
         })).observe(document.querySelector('.trigger'));
 
         $(document).ready(function () {
+
             $('ul li').on('click', function() {
                 $('li').removeClass('side_on');
                 $(this).addClass('side_on');
@@ -251,11 +333,11 @@
             $(document).scroll(function () {
                 if ($(this).scrollTop() > 300) {
                     $('#open').slideDown(300);
-                    $('#sidebar').fadeOut(300);
+                    $('.sidebar').fadeOut(300);
                     //console.log("down");
                 }
                 else {
-                    $('#sidebar').fadeIn(300);
+                    $('.sidebar').fadeIn(300);
                     $('#open').slideUp(300);
                     //console.log("up");
                 }
@@ -272,50 +354,49 @@
             });
 
             $('#cont').click(function () {
-                $('#menu1').removeClass('show');
-                $('#menu2').removeClass('show');
-                $('#menu3').removeClass('show');
+                $('.menu1').removeClass('show');
+                $('.menu2').removeClass('show');
+                $('.menu3').removeClass('show');
                 $('#navbar1').removeClass('show');
             });
 
             $('.dropdown-item').click(function () {
-                $('#menu1').removeClass('show');
-                $('#menu2').removeClass('show');
-                $('#menu3').removeClass('show');
+                $('.menu1').removeClass('show');
+                $('.menu2').removeClass('show');
+                $('.menu3').removeClass('show');
                 $('#navbar1').removeClass('show');
             });
 
             $('#btn1').click(function () {
                 if (!($('#navbardrop').hasClass('collapsed')) || !($('#navbardrop2').hasClass('collapsed')) || !($('#navbardrop3').hasClass('collapsed'))) {
-                    $('#subMenu1').removeClass('show');
-                    $('#menu1').removeClass('show');
-                    $('#menu2').removeClass('show');
-                    $('#menu3').removeClass('show');
+                    $('.subMenu1').removeClass('show');
+                    $('.menu1').removeClass('show');
+                    $('.menu2').removeClass('show');
+                    $('.menu3').removeClass('show');
                 }
             });
 
-            $('#navbardrop').click(function () {
-                if ($('#subMenu1').hasClass('show')) {
-                    $('#subMenu1').removeClass('show');
-                }
-
-                if (!($('#navbardrop2').hasClass('collapsed')) || !($('#navbardrop3').hasClass('collapsed'))) {
-                    $('#menu2').removeClass('show');
-                    $('#menu3').removeClass('show');
+            $('.navbardrop').click(function () {
+                if (!$('.navbardrop2').hasClass('collapsed') || !$('.navbardrop3').hasClass('collapsed')) {
+                    $('.menu2').removeClass('show');
+                    $('.menu3').removeClass('show');
+                    $('.subMenu1').removeClass('show');
                 }
             });
 
-            $('#navbardrop2').click(function () {
-                if (!($('#navbardrop').hasClass('collapsed')) || !($('#navbardrop3').hasClass('collapsed'))) {
-                    $('#menu1').removeClass('show');
-                    $('#menu3').removeClass('show');
+            $('.navbardrop2').click(function () {
+                if (!$('.navbardrop').hasClass('collapsed') || !$('.navbardrop3').hasClass('collapsed')) {
+                    $('.menu1').removeClass('show');
+                    $('.menu3').removeClass('show');
+                    $('.subMenu1').removeClass('show');
                 }
             });
 
-            $('#navbardrop3').click(function () {
-                if (!($('#navbardrop').hasClass('collapsed')) || !($('#navbardrop2').hasClass('collapsed'))) {
-                    $('#menu1').removeClass('show');
-                    $('#menu2').removeClass('show');
+            $('.navbardrop3').click(function () {
+                if (!$('.navbardrop').hasClass('collapsed') || !$('.navbardrop2').hasClass('collapsed')) {
+                    $('.menu1').removeClass('show');
+                    $('.menu2').removeClass('show');
+                    $('.subMenu1').removeClass('show');
                 }
             });
         });

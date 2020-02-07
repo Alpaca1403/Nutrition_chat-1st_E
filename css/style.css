@@ -98,8 +98,9 @@ p { font-weight: 450; }
 	background-color: #313443;
     float: left;
     align-items: center;
-
     border-radius: 0 4px 4px 0;
+
+    z-index: 2;
 }
 
 .sidebar ul {
@@ -221,6 +222,16 @@ p { font-weight: 450; }
 /* >>> Paginación <<< */
 
 /* Stick NavBar */
+
+.like-button {
+    height: 4rem;
+}
+
+.like-button div.nav-item a {
+    margin: auto !important;
+    width: 100%;
+    height: 100%;
+}
 
 @media (min-width: 768px) {
     .dropdown-md-absolute {
