@@ -9,30 +9,35 @@ p { font-weight: 450; }
     z-index: 1;
 }
 
-.bg-img-half.img-back { background: url("../img/nutri_back-min.jpg"); }
-.bg-img-half.img-1 { background: url("../img/gallery/img-aceite-oliva.jpg"); }
-.bg-img-half.img-2 { background: url("../img/gallery/img-aguacate.jpg"); }
-.bg-img-half.img-3 { background: url("../img/gallery/img-cesta-con-verduras.jpg"); }
-.bg-img-half.img-4 { background: url("../img/gallery/img-corredora.jpg"); }
-.bg-img-half.img-5 { background: url("../img/gallery/img-ensalada-de-frutas.jpg"); }
-.bg-img-half.img-6 { background: url("../img/gallery/img-gotas-de-leche.jpg"); }
-.bg-img-half.img-7 { background: url("../img/gallery/img-jugo-verde.jpg"); }
-.bg-img-half.img-8 { background: url("../img/gallery/img-mandarinas.jpg"); }
-.bg-img-half.img-9 { background: url("../img/gallery/img-mesa-saludable.jpg"); }
-.bg-img-half.img-10 { background: url("../img/gallery/img-miel.jpg"); }
-.bg-img-half.img-11 { background: url("../img/gallery/img-moras-azules.jpg"); }
-.bg-img-half.img-12 { background: url("../img/gallery/img-moras-y-bayas.jpg"); }
-.bg-img-half.img-13 { background: url("../img/gallery/img-naranja-soda.jpg"); }
-.bg-img-half.img-14 { background: url("../img/gallery/img-nina-y-sandia.jpg"); }
-.bg-img-half.img-15 { background: url("../img/gallery/img-platillos.jpg"); }
-.bg-img-half.img-16 { background: url("../img/gallery/img-spash-saludable.jpg"); }
-.bg-img-half.img-17 { background: url("../img/gallery/img-tomates-y-champiñones.jpg"); }
-.bg-img-half.img-18 { background: url("../img/gallery/img-variedad-en-mesa.jpg"); }
-.bg-img-half.img-19 { background: url("../img/gallery/img-zanahorias.jpg"); } 
+.img-back { background: url("../img/nutri_back-min.jpg"); }
+.img-1 { background: url("../img/gallery/img-aceite-oliva.jpg"); }
+.img-2 { background: url("../img/gallery/img-aguacate.jpg"); }
+.img-3 { background: url("../img/gallery/img-cesta-con-verduras.jpg"); }
+.img-4 { background: url("../img/gallery/img-corredora.jpg"); }
+.img-5 { background: url("../img/gallery/img-ensalada-de-frutas.jpg"); }
+.img-6 { background: url("../img/gallery/img-gotas-de-leche.jpg"); }
+.img-7 { background: url("../img/gallery/img-jugo-verde.jpg"); }
+.img-8 { background: url("../img/gallery/img-mandarinas.jpg"); }
+.img-9 { background: url("../img/gallery/img-mesa-saludable.jpg"); }
+.img-10 { background: url("../img/gallery/img-miel.jpg"); }
+.img-11 { background: url("../img/gallery/img-moras-azules.jpg"); }
+.img-12 { background: url("../img/gallery/img-moras-y-bayas.jpg"); }
+.img-13 { background: url("../img/gallery/img-naranja-soda.jpg"); }
+.img-14 { background: url("../img/gallery/img-nina-y-sandia.jpg"); }
+.img-15 { background: url("../img/gallery/img-platillos.jpg"); }
+.img-16 { background: url("../img/gallery/img-spash-saludable.jpg"); }
+.img-17 { background: url("../img/gallery/img-tomates-y-champiñones.jpg"); }
+.img-18 { background: url("../img/gallery/img-variedad-en-mesa.jpg"); }
+.img-19 { background: url("../img/gallery/img-zanahorias.jpg"); }
 
-.bg-img-half.img-pos-c{ background-position: center; }
-.bg-img-half.img-pos-t{ background-position: top; }
-.bg-img-half.img-pos-b{ background-position: bottom; }
+.img-pos-c{ background-position: center; }
+.img-pos-t{ background-position: top; }
+.img-pos-b{ background-position: bottom; }
+
+.img {
+    height: 100%;
+    max-height: 10rem;
+}
 
 .grad-1 { background: linear-gradient(45deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 214, 1) 50%, rgba(252, 176, 69, 1) 100% ) !important; }
 .grad-2 { background: linear-gradient(219deg, rgba(34, 193, 195, 1) 0%, rgba(142, 235, 49, 1) 51%, rgba(253, 187, 45, 1) 100% ) !important; }
@@ -99,6 +104,11 @@ p { font-weight: 450; }
     float: left;
     align-items: center;
     border-radius: 0 4px 4px 0;
+
+    top: 50%;
+    bottom: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
 
     z-index: 2;
 }
@@ -169,6 +179,11 @@ p { font-weight: 450; }
     color: #7072d8;
 }
 
+.objetive-red {
+    font-weight: 600 !important;
+    color: #ee3e38;
+}
+
 .objetive-link {
     font-weight: 600 !important;
     color: #ec8937;
@@ -195,6 +210,7 @@ p { font-weight: 450; }
 .paginacion ul {
     list-style: none;
     text-align: center;
+    padding: 0;
 }
 
 .paginacion ul li {
