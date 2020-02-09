@@ -83,7 +83,27 @@ p { font-weight: 450; }
 .w-85 { min-width: 85% !important; }
 .w-90 { min-width: 90% !important; }
 
-/* -------------- Sidebar -------------- */
+/*  Sidebar  */
+
+header .left--100 {
+    width: 75%;
+    max-width: 300px;
+	height: 100%;
+	left: -100%;
+	margin: 0;
+    position: fixed;
+    background-color: #f0f0f0d5;
+    background-image: linear-gradient(0deg, #ffffff81 0%,  #ffffff 30%, #ffffff 100%);
+    z-index: 1080;
+}
+ 
+header .left--100 a {
+	color: rgb(46, 46, 46);
+}
+
+/*   Sidebar   */
+
+/* -------------- Sidebar Tool---------- */
 @keyframes hue {
     from {
         filter: hue-rotate(0deg);
@@ -94,58 +114,47 @@ p { font-weight: 450; }
     }
 }
   
-.sidebar {
+.toolbar {
     /*background-color: #e6e6e6;
     position: fixed;
     float: left;*/
 
-    display: flex;
-    position: fixed;
-	min-height: 30%;
-	max-height: 35%;
-	width: 50px;
 	background-color: #313443;
-    float: left;
     align-items: center;
     border-radius: 0 4px 4px 0;
 
-    top: 50%;
-    bottom: 50%;
     margin-top: auto;
     margin-bottom: auto;
 
     z-index: 2;
 }
 
-.sidebar ul {
+.toolbar ul {
     text-align: center;
-    color: white;
+    color: rgb(34, 34, 34);
     list-style: none;
     padding-left: 0.7rem;
     margin-bottom: unset;
 }
 
-.sidebar ul li {
-    padding: 10px 0;
+.toolbar ul li {
     cursor: pointer;
     transition: all ease-out 120ms;
 }
 
-.sidebar ul li.side_on i {
+.toolbar ul li.side_on i {
     color: #85ee77;
 }
 
-.sidebar ul li i {
-    display: block;
-    font-size: 25px;
+.toolbar ul li i {
     transition: all ease 450ms;
 }
 
-.sidebar ul li i:hover {
-    color: rgb(247, 244, 75);
+.toolbar ul li i:hover {
+    color: #ce68db;
 }
 
-/* -------------- Sidebar -------------- */
+/* -------------- Toolbar -------------- */
 
 .bg-img-half {
     height: 17rem;

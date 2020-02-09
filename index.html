@@ -22,60 +22,65 @@
 </head>
 
 <body>
-    <div class="container-fluid bg-img-half img-back img-pos-t animated fadeIn"></div>
+    <!-- ######################### NavBar ######################### -->    
+    <header> 
+		<div class="left--100" id="navbar1">
+            <ul class="navbar-nav ml-auto">
+                <div class="container p-0 pl-2">
+                    <div class="nav-item col-12 active hvr row w-100 mx-0 py-3 border-bottom text-center">
+                        <div class="nav-link col-12 p-0">
+                            <div class="container pt-2">
+                                <b>Vita</b> <i class="fas fa-leaf fa-1_25x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-item py-2 col-12 dropdown active p-0 2">
+                        <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop" href="index.html">
+                            <div class="container pt-2">
+                                <i class="fas fa-home fa-1_75x col-3 p-0"></i> <b class="col-9 h-100 align-middle">Inicio</b>
+                            </div>
+                        </a>
+                    </div>
 
-    <!-- ######################### NavBar ######################### -->
-    <nav id="theme" class="navbar navbar-expand-md nav-back navbar-light s-bottom py-2 mx-auto w-100">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Vita <i class="fas fa-leaf fa-1_25x"></i></a>
-            <button id="btn1" class="navbar-toggler navbar-toggler-right border-0 rotated" type="button"
-                data-toggle="collapse" data-target="#navbar1">
-                <span><i class="fas fa-chevron-circle-down fa-1_25x"></i></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbar1">
-                <ul class="navbar-nav ml-auto">
-                    <div class="container d-md-none text-center p-0">
-                        <div class="nav-item active hvr row w-100 like-button m-0">
-                            <a class="nav-link col-12 p-0" href="index.html">
+                    <div class="row w-100 m-0">
+                        <div class="nav-item py-2 col-12 dropdown active p-0 2">
+                            <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop" href="#"
+                                data-toggle="collapse" data-target=".menu1">
                                 <div class="container pt-2">
-                                    <i class="fas fa-home fa-2x col-12"></i> <b class="col-12">Inicio</b>
+                                    <i class="fas fa-apple-alt fa-1_75x col-3 p-0"></i> <b class="col-9 h-100 align-middle">Nutrición</b>
                                 </div>
                             </a>
                         </div>
 
-                        <div class="row w-100 like-button m-0">
-                            <div class="nav-item dropdown active col-6 p-0">
-                                <!-- 2 -->
-                                <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop" href="#"
-                                    data-toggle="collapse" data-target=".menu1">
-                                    <div class="container pt-2">
-                                        <i class="fas fa-apple-alt fa-2x col-12 p-0"></i> <b
-                                            class="col-12 p-0">Nutrición</b>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="nav-item dropdown active col-6 p-0">
-                                <!-- 2 -->
-                                <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop2" href="#"
-                                    data-toggle="collapse" data-target=".menu2">
-                                    <div class="container pt-2">
-                                        <i class="fas fa-book fa-2x col-12 p-0"></i> <b class="col-12 p-0">Intereses</b>
-                                    </div>
-                                </a>
+                        <div class="collapse col-12 dropdown dropdown-md-absolute menu1">
+                            <a class="dropdown-item hvr py-2" href="#">Recetas</a>
+                            <a class="dropdown-item hvr py-2" href="#">Estilo de vida</a>
+                            <a class="nav-link hvr rotated categories-dropdown a-hover subnavbardrop" href="#"
+                                data-toggle="collapse" data-target=".subMenu1"> <span><b>Etapas</b></span>
+                                <i class="fas fa-chevron-circle-down"></i>
+                            </a>
+                        </div>
+    
+                        <div class="row w-100 m-0 3">
+                            <div class="collapse dropdown dropdown-md-absolute mt-md-1 col-12 subMenu1">
+                                <a class="dropdown-item hvr py-2" href="nutricion/nutricion-peques.html">Niñez</a>
+                                <a class="dropdown-item hvr py-2" href="#">Adolescencia</a>
+                                <a class="dropdown-item hvr py-2" href="#">Adultez</a>
+                                <a class="dropdown-item hvr py-2" href="#">Embarazo</a>
+                                <a class="dropdown-item hvr py-2" href="#">3ra Edad</a>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="row w-100 m-0">
-                            <!-- 2 row -->
-                            <div class="collapse dropdown dropdown-md-absolute col-12 menu1">
-                                <a class="dropdown-item hvr py-2" href="#">Recetas</a>
-                                <a class="dropdown-item hvr py-2" href="#">Estilo de vida</a>
-                                <a class="nav-link hvr rotated categories-dropdown a-hover subnavbardrop" href="#"
-                                    data-toggle="collapse" data-target=".subMenu1"> <span><b>Etapas</b></span>
-                                    <i class="fas fa-chevron-circle-down"></i>
-                                </a>
-                            </div>
+                    <div class="row w-100 m-0">
+                        <div class="nav-item py-2 col-12 dropdown active col-12 p-0 2">
+                            <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop2" href="#"
+                                data-toggle="collapse" data-target=".menu2">
+                                <div class="container pt-2">
+                                    <i class="fas fa-book fa-1_5x col-3 p-0"></i> <b class="col-9 h-100 align-middle">Intereses</b>
+                                </div>
+                            </a>
                         </div>
 
                         <div class="row w-100 m-0">
@@ -86,32 +91,19 @@
                                 <a class="dropdown-item hvr py-2" href="interes/gallery-1.html">Galería</a>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="row w-100 m-0">
+                        <div class="nav-item py-2 col-12 dropdown active col-12 p-0 3">
+                            <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop3" href="#"
+                                data-toggle="collapse" data-target=".menu3">
+                                <div class="container pt-2">
+                                    <i class="fas fa-users fa-1_5x col-3 p-0"></i> <b class="col-9 h-100 align-middle">Nosotros</b>
+                                </div>
+                            </a>
+                        </div>
 
                         <div class="row w-100 m-0">
-                            <!-- 3? row -->
-                            <div class="collapse dropdown dropdown-md-absolute mt-md-1 col-12 subMenu1">
-                                <a class="dropdown-item hvr py-2" href="nutricion/nutricion-peques.html">Niñez</a>
-                                <a class="dropdown-item hvr py-2" href="#">Adolescencia</a>
-                                <a class="dropdown-item hvr py-2" href="#">Adultez</a>
-                                <a class="dropdown-item hvr py-2" href="#">Embarazo</a>
-                                <a class="dropdown-item hvr py-2" href="#">3ra Edad</a>
-                            </div>
-                        </div>
-
-                        <div class="row w-100 like-button m-0 text-center">
-                            <!-- 4 row -->
-                            <div class="nav-item dropdown active col-12 p-0">
-                                <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop3" href="#"
-                                    data-toggle="collapse" data-target=".menu3">
-                                    <span class="container">
-                                        <i class="fas fa-users fa-2x col-12 p-0"></i> <b class="col-12 p-0">Nosotros</b>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="row w-100 m-0 py-2">
-                            <!-- 5 row -->
                             <div class="collapse dropdown dropdown-md-absolute col-12 menu3">
                                 <a class="dropdown-item hvr py-2" href="nosotros/about.html">Acerca</a>
                                 <a class="dropdown-item hvr py-2" href="nosotros/filosofia.html">Filosofía</a>
@@ -119,11 +111,29 @@
                             </div>
                         </div>
                     </div>
-                </ul>
+                </div>
+            </ul>
+        </div>
+	</header>
+    
+    <nav id="theme" class="navbar navbar-expand-md nav-back navbar-light s-bottom py-2 mx-auto w-100">
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-10 text-left">
+                    <a class="navbar-brand px-3" href="index.html">Vita <i class="fas fa-leaf fa-1_25x"></i></a>
+                </div>
+                <div class="col-2 text-right h-100 my-auto p-0">
+                    <div id="btn1" class="navbar-right border-0 rotated h-100 menu_bar"">
+                        <span class="my-auto my-auto"><i class="fas fa-chevron-circle-down fa-1_25x"></i></span>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
     <!-- ######################### NavBar ######################### -->
+
+    <div class="container-fluid bg-img-half img-back img-pos-t animated fadeIn"></div>
+
 
     <!-- ***************** Contenido ***************** -->
     <div class="container">
@@ -177,7 +187,7 @@
                             <img src="img/user_.svg" alt="user_" class="rounded-circle user_img">
                             <span class="online_icon"></span>
                         </div>
-                        <div class="col-9 align-self-center h-100">
+                        <div class="col-9 h-100 align-middle align-self-center h-100">
                             <h5 class="mb-0">Nutrición.com</h5>
                             <p class="fa-0_70 mb-0">En Linea</p>
                         </div>
@@ -223,34 +233,62 @@
 
     <!-- ************************* ToolBar ************************* -->
     <div id="pre-footer">
-        <div id="footer" class="container">
-            <div class="row text-center py-3">
+        <div id="footer" class="container-fluid toolbar">
+            <ul class="row text-center py-3">
                 <div class="col-2 w-20">
-                    <span class="fa fa-home fa-2x"></span>
+                    <li class="p-0">
+                        <i class="fa fa-home fa-2x"></i>
+                    </li>
                 </div>
                 <div class="col-2 w-20">
-                    <span class="fa fa-search fa-2x"></span>
+                    <li class="p-0">
+                        <i class="fa fa-search fa-2x"></i>
+                    </li>
                 </div>
                 <div class="col-2 w-20">
-                    <span class="fa fa-plus-square fa-2x"></span>
+                    <li class="p-0">
+                        <i class="fa fa-plus-square fa-2x"></i>
+                    </li>
                 </div>
                 <div class="col-2 w-20">
-                    <span class="fa fa-heart fa-2x"></span>
+                    <li class="p-0">
+                        <i class="fa fa-heart fa-2x"></i>
+                    </li>
                 </div>
                 <div class="col-2 w-20">
-                    
-                    <button id="open" class="p-0">
-                        <span class="fa fa-circle fa-2x"></span>
-                    </button>
+                    <li id="open" class="p-0">
+                        <i class="fa fa-circle fa-2x"></i>
+                    </li>
                 </div>
-            </div>
+            </ul>
         </div>
     </div>
     <!-- ************************* ToolBar ************************* -->
 
     <script>
+        function openNav() {
+            document.getElementById("sideNavigation").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("sideNavigation").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
         $(document).ready(function () {
             var v_chat = false;
+            var v_side = false;
+ 
+            $('.menu_bar').click(function(){
+                if(v_side == false){
+                    $('#navbar1').animate({ left: '0' });
+                } 
+                else {
+                    $('#navbar1').animate({ left: '-100%' });
+                }
+                v_side = !v_side;
+            });
 
             $(document).scroll(function () {
                 if ($(this).scrollTop() > 100) {
