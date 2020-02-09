@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../../img/manzana-icon.svg" type="image/x-icon">
+    <title>Vita - Nutrición - Niños</title>
+
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/animate.css">
+    <link rel="stylesheet" href="../../css/all.min.css">
+    <link rel="stylesheet" href="../../css/solid.min.css">
+    <link rel="stylesheet" href="../../css/regular.min.css">
+    <link rel="stylesheet" href="../../css/brands.min.css">
+    <link rel="stylesheet" href="../../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="../../js/jquery-3.4.1.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid w-100 bg-img-half img-18 img-pos-t animated fadeIn"></div>
+
+    <!-- ######################### NavBar ######################### -->
+    <span class="position-absolute trigger"><!-- 'stuck' --></span>
+    <nav id="theme" class="navbar navbar-expand-md nav-back sticky-top navbar-light bg-dark py-2 mx-auto w-75">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">Vita <i class="fas fa-leaf"></i></a>
+            <button id="btn1" class="navbar-toggler navbar-toggler-right border-0 rotated" type="button" data-toggle="collapse"
+                data-target="#navbar1">
+                <span><i class="fas fa-chevron-circle-down"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
+                    <div class="nav-item active hvr d-md-block d-none">
+                        <a class="nav-link" href="../../index.html"> <b>Inicio</b> </a>
+                    </div>
+
+                    <div class="nav-item dropdown active d-md-block d-none"> <!-- 1 -->
+                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop" href="#"
+                            data-toggle="collapse" data-target=".menu1"> <b>Nutrición</b> <iclass="fas fa-chevron-circle-down"></i></a>
+
+                        <div class="collapse dropdown dropdown-md-absolute" id="menu1">
+                            <a class="dropdown-item hvr py-2" href="#">Recetas</a>
+                            <a class="dropdown-item hvr py-2" href="#">Estilo de vida</a>
+                            <a class="nav-link hvr rotated categories-dropdown a-hover subnavbardrop" href="#"
+                                data-toggle="collapse" data-target=".subMenu1"> <span><b>Etapas</b></span> <i
+                                    class="fas fa-chevron-circle-down"></i></a>
+
+                            <div class="collapse dropdown dropdown-md-absolute mt-md-1 subMenu1">
+                                <a class="dropdown-item hvr py-2" href="nutricion-peques.html">Niñez</a>
+                                <a class="dropdown-item hvr py-2" href="#">Adolescencia</a>
+                                <a class="dropdown-item hvr py-2" href="#">Adultez</a>
+                                <a class="dropdown-item hvr py-2" href="#">Embarazo</a>
+                                <a class="dropdown-item hvr py-2" href="#">3ra Edad</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown active d-md-block d-none"> <!-- 1 -->
+                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop2" href="#"
+                            data-toggle="collapse" data-target=".menu2"> <b>Intereses</b> <i
+                                class="fas fa-chevron-circle-down"></i></a>
+
+                        <div class="collapse dropdown dropdown-md-absolute" id="menu2">
+                            <a class="dropdown-item hvr py-2" href="#">El Diario de <span
+                                    class="font-italic">Vita</span></a>
+                            <a class="dropdown-item hvr py-2" href="../../interes/gallery-1.html">Galería</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown active d-md-block d-none"> <!-- 1 -->
+                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop3" href="#"
+                            data-toggle="collapse" data-target=".menu3"> <b>Nosotros</b> <i
+                                class="fas fa-chevron-circle-down"></i></a>
+
+                        <div class="collapse dropdown dropdown-md-absolute" id="menu3">
+                            <a class="dropdown-item hvr py-2" href="../../nosotros/about.html">Acerca</a>
+                            <a class="dropdown-item hvr py-2" href="#">Filosofía</a>
+                            <a class="dropdown-item hvr py-2" href="../../nosotros/schedule.html">Horarios</a>
+                        </div>
+                    </div>
+
+                    <div class="container d-md-none text-center p-0">
+                        <div class="nav-item active hvr row w-100 like-button m-0">
+                            <a class="nav-link col-12 p-0" href="../../index.html">
+                                <div class="container pt-2">
+                                    <i class="fas fa-home fa-2x col-12"></i> <b class="col-12">Inicio</b>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="row w-100 like-button m-0">
+                            <div class="nav-item dropdown active col-6 p-0"> <!-- 2 -->
+                                <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop" href="#"
+                                    data-toggle="collapse" data-target=".menu1">
+                                    <div class="container pt-2">
+                                        <i class="fas fa-apple-alt fa-2x col-12 p-0"></i> <b class="col-12 p-0">Nutrición</b>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="nav-item dropdown active col-6 p-0"> <!-- 2 -->
+                                <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop2" href="#"
+                                    data-toggle="collapse" data-target=".menu2"> 
+                                    <div class="container pt-2">
+                                        <i class="fas fa-book fa-2x col-12 p-0"></i> <b class="col-12 p-0">Intereses</b>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row w-100 m-0"> <!-- 2 row -->
+                            <div class="collapse dropdown dropdown-md-absolute col-12 menu1">
+                                <a class="dropdown-item hvr py-2" href="#">Recetas</a>
+                                <a class="dropdown-item hvr py-2" href="#">Estilo de vida</a>
+                                <a class="nav-link hvr rotated categories-dropdown a-hover subnavbardrop" href="#"
+                                    data-toggle="collapse" data-target=".subMenu1"> <span><b>Etapas</b></span> 
+                                    <i class="fas fa-chevron-circle-down"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row w-100 m-0">
+                            <div class="collapse dropdown dropdown-md-absolute col-12 menu2">
+                                <a class="dropdown-item hvr py-2" href="#">El Diario de <span class="font-italic">Vita</span>
+                                </a>
+                                <a class="dropdown-item hvr py-2" href="../../interes/gallery-1.html">Galería</a>
+                            </div>
+                        </div>
+
+                        <div class="row w-100 m-0"> <!-- 3? row -->
+                            <div class="collapse dropdown dropdown-md-absolute mt-md-1 col-12 subMenu1">
+                                <a class="dropdown-item hvr py-2" href="nutricion-peques.html">Niñez</a>
+                                <a class="dropdown-item hvr py-2" href="#">Adolescencia</a>
+                                <a class="dropdown-item hvr py-2" href="#">Adultez</a>
+                                <a class="dropdown-item hvr py-2" href="#">Embarazo</a>
+                                <a class="dropdown-item hvr py-2" href="#">3ra Edad</a>
+                            </div>
+                        </div>
+    
+                        <div class="row w-100 like-button m-0 text-center"> <!-- 4 row -->
+                            <div class="nav-item dropdown active col-12 p-0">
+                                <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop3" href="#"
+                                    data-toggle="collapse" data-target=".menu3"> 
+                                    <span class="container pt-2">
+                                        <i class="fas fa-users fa-2x col-12 p-0"></i> <b class="col-12 p-0">Nosotros</b>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row w-100 m-0 py-2"> <!-- 5 row -->
+                            <div class="collapse dropdown dropdown-md-absolute col-12 menu3">
+                                <a class="dropdown-item hvr py-2" href="../../nosotros/about.html">Acerca</a>
+                                <a class="dropdown-item hvr py-2" href="#">Filosofía</a>
+                                <a class="dropdown-item hvr py-2" href="../../nosotros/schedule.html">Horarios</a>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ######################### NavBar ######################### -->
+
+    <!-- ************************* SideBar ************************* -->
+    <nav class="sidebar h-100" id="sidebar">
+        <ul>
+            <li class="side_on">
+                <i class="fas fa-share-alt"></i>
+            </li>
+            <li class="border-bottom border-top">
+                <i class="fas fa-archive"></i>
+            </li>
+            <li>
+                <i class="fa fa-heart"></i>
+            </li>
+            <li class="border-bottom border-top">
+                <i class="fas fa-print"></i>
+            </li>
+            <li>
+                <i class="fas fa-sliders-h"></i>
+            </li>
+        </ul>
+    </nav>
+    <!-- ************************* SideBar ************************* -->
+
+    <!-- ***************** Contenido ***************** -->
+    <div id="cont" class="container">
+        <div class="row mx-auto w-85">
+            <div class="col-12 py-4 text-justify">
+                <h1 class="text-center font-weight-light d-md-block d-none display-2 my-5">Recetas</h1>
+                <h1 class="text-center font-weight-light d-md-none d-sm-block display-4 my-5">Recetas</h1>
+
+                <h5 class="text-center font-weight-light my-2">Comida deliciosa divertida y saludable (algunas no tanto 😉).</h5>
+
+                <p class="pt-3">
+                    La sección de las recetas, algo que no dejamos pasar para nuestros clientes
+                </p>
+
+                <hr class="mt-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 align-content-center">
+                            <h3 class="my-6 text-center"><b>Recetas saludables</b></h3>
+
+                            <h4 class="my-2">Ensalada de pollo fría.</h4>
+                            <p class="text-justify my-4 fa-1_25x">
+                                Ingredientes: <br>
+
+                                <ul>
+                                    <li>1/2 taza de yogur natural</li>
+                                    <li>1/4 taza de mayonesa</li>
+                                    <li>Sal y pimienta negra</li>
+                                    <li>1 tallo de apio</li>
+                                    <li>1/4 taza de cebolla roja</li>
+                                    <li>1/3 taza de pasas de uva</li>
+                                    <li>2 tazas de pollo asado picado</li>
+                                    <li>4 tazas de lechuga romana picada</li>
+                                </ul>
+
+                                <br>Únicamente vamos a revolver todo en un bol, y servir fresco para que los niños
+                                puedan disfrutar de un plato nutritivo y rico.
+                            </p>
+                        </div>
+
+                        <div class="col-12 align-content-center">
+                            <h4 class="my-2">Patatas (papas) rellenas.</h4>
+                            <p class="text-justify my-4 fa-1_25x">
+                                Ingredientes: <br>
+
+                                <ul>
+                                    <li>4 patatas medianas</li>
+                                    <li>350 gramos de carne molida</li>
+                                    <li>1 taza de brócoli</li>
+                                    <li>1 taza de agua</li>
+                                    <li>1 taza de queso cheddar</li>
+                                    <li>3 cebolletas</li>
+                                    <li>Sal y pimienta</li>
+                                </ul>
+
+                                <br>En primer lugar, las papas serán pasadas por el microondas durante veinte minutos;
+                                debemos darle varios toques
+                                con el tenedor para que el calor penetre en este tubérculo. Después coceremos los
+                                brócolis en agua y saltearemos la
+                                carne salpimentada. Una vez listas las patatas las cortaremos por la mitad y sacaremos
+                                la pulpa. La pulpa será mezclada
+                                con la carne, el queso cheddar, las cebolletas y el brócoli previamente picado. Con esta
+                                masa rellenaremos la piel que
+                                quedó y las llevaremos al microondas una vez más durante diez minutos.
+                                <br>Cubriremos con otro tanto de queso cheddar y lo llevaremos al microondas un par de
+                                minutos más.
+                            </p>
+                        </div>
+
+                        <div class="col-12 align-content-center">
+                            <h4 class="my-2">Copa de fruta y chocolate.</h4>
+                            <p class="text-justify my-4 fa-1_25x">
+                                Ingredientes: <br>
+
+                                <ul style="text-align: justify;">
+                                    <li>1/2 cucharadita de cacao en polvo</li>
+                                    <li>1 cucharadita de esencia de vainilla</li>
+                                    <li>2 cucharadita de miel</li>
+                                    <li>1 1/2 taza de yogur natural</li>
+                                    <li>2 tazas de frambuesas o fresas</li>
+                                    <li>1/4 taza de virutas de chocolate</li>
+                                </ul>
+
+                                <br>Iniciaremos por batir el cacao en polvo en conjunto con la vainilla, agregaremos poco a poco la 
+                                miel al igual que el yogurt. Al tanto iremos vaciando el contenido en una copa, intercalando una capa 
+                                de mezcla con frutas y otra de la mezcla del yogurt y miel que antes hicimos, ¿fácil verdad? 
+                                Delicioso y nutritivo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mb-6">
+            </div>
+        </div>
+    </div>
+    <!-- ***************** Contenido ***************** -->
+
+    <button id="open" class="open-button animated fadeIn">Chat</button>
+    <!-- ··················· Chat ··················· -->
+    <div class="chat-popup animated fadeIn" id="chatPanel">
+        <div id="form-container" class="row h-100 card-op">
+            <div id="body-msg" class="card d-flex">
+                <div class="card-header msg_head">
+                    <div class="row bd-highlight">
+                        <div class="col-3">
+                            <img src="../../img/user_.svg" alt="user_" class="rounded-circle user_img">
+                            <span class="online_icon"></span>
+                        </div>
+                        <div class="col-7 align-self-center h-100">
+                            <h5 class="mb-0">Nutrición.com</h5>
+                            <p class="fa-0_70 mb-0">En Linea</p>
+                        </div>
+                        <div class="col-2 text-right align-self-start">
+                            <button id="close" type="button" class="btn cancel p-0"><span
+                                    class="far fa-window-close text-white"></span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body msg_card_body">
+                    <div class="d-flex justify-content-start mb-4">
+                        <div class="img_cont_msg">
+                            <img src="../../img/user_.svg" class="rounded-circle user_img_msg">
+                        </div>
+                        <div class="msg_container">
+                            Hola ¿Puedo ayudarte en algo?
+                            <span class="msg_time">8:40 AM, Hoy</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end mb-4">
+                        <div class="msg_container_send">
+                            Hola, sí tengo una duda...
+                            <span class="msg_time_send">8:55 AM, Hoy</span>
+                        </div>
+                        <div class="img_cont_msg">
+                            <img src="../../img/user_.svg" class="rounded-circle user_img_msg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <div class="input-group">
+                        <div class="input-group-append">
+                            <span class="input-group-text attach_btn"><i class="fa fa-paperclip"></i></span>
+                        </div>
+                        <textarea class="form-control type_msg" placeholder="Escribe tu mensaje..."></textarea>
+                        <div class="input-group-append">
+                            <span class="input-group-text send_btn"><i class="fas fa-paper-plane"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ··················· Chat ··················· -->
+
+    <script>
+        document.getElementById("theme").classList.remove('bg-dark');
+
+        (new IntersectionObserver(function (e, o) {
+            if (e[0].intersectionRatio > 0) {
+                document.getElementById("theme").classList.add('s-bottom');
+                document.getElementById("theme").classList.remove('s-top');
+
+                document.getElementById("body-msg").classList.add('card-sm');
+                document.getElementById("body-msg").classList.add('op-25');
+            }
+            else {
+
+                document.getElementById("theme").classList.add('s-top');
+                document.getElementById("theme").classList.remove('s-bottom');
+
+                document.getElementById("body-msg").classList.remove('card-sm');
+                document.getElementById("body-msg").classList.remove('op-25');
+            };
+        })).observe(document.querySelector('.trigger'));
+
+        $(document).ready(function () {
+
+            $('ul li').on('click', function() {
+                $('li').removeClass('side_on');
+                $(this).addClass('side_on');
+            });
+
+            $('#open').css("display", "none");
+
+            $(document).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#open').slideDown(300);
+                    $('.sidebar').fadeOut(300);
+                    //console.log("down");
+                }
+                else {
+                    $('.sidebar').fadeIn(300);
+                    $('#open').slideUp(300);
+                    //console.log("up");
+                }
+            });
+
+            $('#open').click(function () {
+                $('#chatPanel').css('display', 'block');
+                $('#open').css('display', 'none');
+            });
+
+            $('#close').click(function () {
+                $('#chatPanel').css('display', 'none');
+                $('#open').css('display', 'block');
+            });
+
+            $('#cont').click(function () {
+                $('.menu1').removeClass('show');
+                $('.menu2').removeClass('show');
+                $('.menu3').removeClass('show');
+                $('#navbar1').removeClass('show');
+            });
+
+            $('.dropdown-item').click(function () {
+                $('.menu1').removeClass('show');
+                $('.menu2').removeClass('show');
+                $('.menu3').removeClass('show');
+                $('#navbar1').removeClass('show');
+            });
+
+            $('#btn1').click(function () {
+                if (!($('#navbardrop').hasClass('collapsed')) || !($('#navbardrop2').hasClass('collapsed')) || !($('#navbardrop3').hasClass('collapsed'))) {
+                    $('.subMenu1').removeClass('show');
+                    $('.menu1').removeClass('show');
+                    $('.menu2').removeClass('show');
+                    $('.menu3').removeClass('show');
+                }
+            });
+
+            $('.navbardrop').click(function () {
+                if (!$('.navbardrop2').hasClass('collapsed') || !$('.navbardrop3').hasClass('collapsed')) {
+                    $('.menu2').removeClass('show');
+                    $('.menu3').removeClass('show');
+                    $('.subMenu1').removeClass('show');
+                }
+            });
+
+            $('.navbardrop2').click(function () {
+                if (!$('.navbardrop').hasClass('collapsed') || !$('.navbardrop3').hasClass('collapsed')) {
+                    $('.menu1').removeClass('show');
+                    $('.menu3').removeClass('show');
+                    $('.subMenu1').removeClass('show');
+                }
+            });
+
+            $('.navbardrop3').click(function () {
+                if (!$('.navbardrop').hasClass('collapsed') || !$('.navbardrop2').hasClass('collapsed')) {
+                    $('.menu1').removeClass('show');
+                    $('.menu2').removeClass('show');
+                    $('.subMenu1').removeClass('show');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -25,65 +25,16 @@
     <div class="container-fluid bg-img-half img-back img-pos-t animated fadeIn"></div>
 
     <!-- ######################### NavBar ######################### -->
-    <span class="position-absolute trigger"><!-- 'stuck' --></span>
-    <nav id="theme" class="navbar navbar-expand-md nav-back sticky-top navbar-light bg-dark py-2 mx-auto w-75">
+    <nav id="theme" class="navbar navbar-expand-md nav-back navbar-light s-bottom py-2 mx-auto w-100">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Vita <i class="fas fa-leaf"></i></a>
-            <button id="btn1" class="navbar-toggler navbar-toggler-right border-0 rotated" type="button" data-toggle="collapse"
-                data-target="#navbar1">
-                <span><i class="fas fa-chevron-circle-down"></i></span>
+            <a class="navbar-brand" href="index.html">Vita <i class="fas fa-leaf fa-1_25x"></i></a>
+            <button id="btn1" class="navbar-toggler navbar-toggler-right border-0 rotated" type="button"
+                data-toggle="collapse" data-target="#navbar1">
+                <span><i class="fas fa-chevron-circle-down fa-1_25x"></i></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbar1">
                 <ul class="navbar-nav ml-auto">
-                    <div class="nav-item active hvr d-md-block d-none">
-                        <a class="nav-link" href="index.html"> <b>Inicio</b> </a>
-                    </div>
-
-                    <div class="nav-item dropdown active d-md-block d-none"> <!-- 1 -->
-                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop" href="#"
-                            data-toggle="collapse" data-target=".menu1"> <b>Nutrición</b> <iclass="fas fa-chevron-circle-down"></i></a>
-
-                        <div class="collapse dropdown dropdown-md-absolute" id="menu1">
-                            <a class="dropdown-item hvr py-2" href="#">Recetas</a>
-                            <a class="dropdown-item hvr py-2" href="#">Estilo de vida</a>
-                            <a class="nav-link hvr rotated categories-dropdown a-hover subnavbardrop" href="#"
-                                data-toggle="collapse" data-target=".subMenu1"> <span><b>Etapas</b></span> 
-                                <i class="fas fa-chevron-circle-down"></i></a>
-
-                            <div class="collapse dropdown dropdown-md-absolute mt-md-1 subMenu1">
-                                <a class="dropdown-item hvr py-2" href="#">Niñez</a>
-                                <a class="dropdown-item hvr py-2" href="#">Adolescencia</a>
-                                <a class="dropdown-item hvr py-2" href="#">Adultez</a>
-                                <a class="dropdown-item hvr py-2" href="#">Embarazo</a>
-                                <a class="dropdown-item hvr py-2" href="#">3ra Edad</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="nav-item dropdown active d-md-block d-none"> <!-- 1 -->
-                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop2" href="#"
-                            data-toggle="collapse" data-target=".menu2"> <b>Intereses</b> 
-                            <i class="fas fa-chevron-circle-down"></i></a>
-
-                        <div class="collapse dropdown dropdown-md-absolute" id="menu2">
-                            <a class="dropdown-item hvr py-2" href="#">El Diario de <span class="font-italic">Vita</span></a>
-                            <a class="dropdown-item hvr py-2" href="interes/gallery-1.html">Galería</a>
-                        </div>
-                    </div>
-
-                    <div class="nav-item dropdown active d-md-block d-none"> <!-- 1 -->
-                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop3" href="#"
-                            data-toggle="collapse" data-target=".menu3"> <b>Nosotros</b> <i
-                                class="fas fa-chevron-circle-down"></i></a>
-
-                        <div class="collapse dropdown dropdown-md-absolute" id="menu3">
-                            <a class="dropdown-item hvr py-2" href="nosotros/about.html">Acerca</a>
-                            <a class="dropdown-item hvr py-2" href="#">Filosofía</a>
-                            <a class="dropdown-item hvr py-2" href="nosotros/schedule.html">Horarios</a>
-                        </div>
-                    </div>
-
                     <div class="container d-md-none text-center p-0">
                         <div class="nav-item active hvr row w-100 like-button m-0">
                             <a class="nav-link col-12 p-0" href="index.html">
@@ -94,17 +45,20 @@
                         </div>
 
                         <div class="row w-100 like-button m-0">
-                            <div class="nav-item dropdown active col-6 p-0"> <!-- 2 -->
+                            <div class="nav-item dropdown active col-6 p-0">
+                                <!-- 2 -->
                                 <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop" href="#"
                                     data-toggle="collapse" data-target=".menu1">
                                     <div class="container pt-2">
-                                        <i class="fas fa-apple-alt fa-2x col-12 p-0"></i> <b class="col-12 p-0">Nutrición</b>
+                                        <i class="fas fa-apple-alt fa-2x col-12 p-0"></i> <b
+                                            class="col-12 p-0">Nutrición</b>
                                     </div>
                                 </a>
                             </div>
-                            <div class="nav-item dropdown active col-6 p-0"> <!-- 2 -->
+                            <div class="nav-item dropdown active col-6 p-0">
+                                <!-- 2 -->
                                 <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop2" href="#"
-                                    data-toggle="collapse" data-target=".menu2"> 
+                                    data-toggle="collapse" data-target=".menu2">
                                     <div class="container pt-2">
                                         <i class="fas fa-book fa-2x col-12 p-0"></i> <b class="col-12 p-0">Intereses</b>
                                     </div>
@@ -112,12 +66,13 @@
                             </div>
                         </div>
 
-                        <div class="row w-100 m-0"> <!-- 2 row -->
+                        <div class="row w-100 m-0">
+                            <!-- 2 row -->
                             <div class="collapse dropdown dropdown-md-absolute col-12 menu1">
                                 <a class="dropdown-item hvr py-2" href="#">Recetas</a>
                                 <a class="dropdown-item hvr py-2" href="#">Estilo de vida</a>
                                 <a class="nav-link hvr rotated categories-dropdown a-hover subnavbardrop" href="#"
-                                    data-toggle="collapse" data-target=".subMenu1"> <span><b>Etapas</b></span> 
+                                    data-toggle="collapse" data-target=".subMenu1"> <span><b>Etapas</b></span>
                                     <i class="fas fa-chevron-circle-down"></i>
                                 </a>
                             </div>
@@ -125,13 +80,15 @@
 
                         <div class="row w-100 m-0">
                             <div class="collapse dropdown dropdown-md-absolute col-12 menu2">
-                                <a class="dropdown-item hvr py-2" href="#">El Diario de <span class="font-italic">Vita</span>
+                                <a class="dropdown-item hvr py-2" href="interes/blog.html">El Diario de <span
+                                        class="font-italic">Vita</span>
                                 </a>
                                 <a class="dropdown-item hvr py-2" href="interes/gallery-1.html">Galería</a>
                             </div>
                         </div>
 
-                        <div class="row w-100 m-0"> <!-- 3? row -->
+                        <div class="row w-100 m-0">
+                            <!-- 3? row -->
                             <div class="collapse dropdown dropdown-md-absolute mt-md-1 col-12 subMenu1">
                                 <a class="dropdown-item hvr py-2" href="nutricion/nutricion-peques.html">Niñez</a>
                                 <a class="dropdown-item hvr py-2" href="#">Adolescencia</a>
@@ -140,22 +97,24 @@
                                 <a class="dropdown-item hvr py-2" href="#">3ra Edad</a>
                             </div>
                         </div>
-    
-                        <div class="row w-100 like-button m-0 text-center"> <!-- 4 row -->
+
+                        <div class="row w-100 like-button m-0 text-center">
+                            <!-- 4 row -->
                             <div class="nav-item dropdown active col-12 p-0">
                                 <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop3" href="#"
-                                    data-toggle="collapse" data-target=".menu3"> 
-                                    <span class="container pt-2">
+                                    data-toggle="collapse" data-target=".menu3">
+                                    <span class="container">
                                         <i class="fas fa-users fa-2x col-12 p-0"></i> <b class="col-12 p-0">Nosotros</b>
                                     </span>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="row w-100 m-0 py-2"> <!-- 5 row -->
+                        <div class="row w-100 m-0 py-2">
+                            <!-- 5 row -->
                             <div class="collapse dropdown dropdown-md-absolute col-12 menu3">
                                 <a class="dropdown-item hvr py-2" href="nosotros/about.html">Acerca</a>
-                                <a class="dropdown-item hvr py-2" href="#">Filosofía</a>
+                                <a class="dropdown-item hvr py-2" href="nosotros/filosofia.html">Filosofía</a>
                                 <a class="dropdown-item hvr py-2" href="nosotros/schedule.html">Horarios</a>
                             </div>
                         </div>
@@ -166,52 +125,50 @@
     </nav>
     <!-- ######################### NavBar ######################### -->
 
-    <!-- ************************* SideBar ************************* -->
-    <nav class="sidebar h-100" id="sidebar">
-        <ul>
-            <li class="side_on">
-                <i class="fas fa-share-alt"></i>
-            </li>
-            <li class="border-bottom border-top">
-                <i class="fas fa-archive"></i>
-            </li>
-            <li>
-                <i class="fa fa-heart"></i>
-            </li>
-            <li class="border-bottom border-top">
-                <i class="fas fa-print"></i>
-            </li>
-            <li>
-                <i class="fas fa-sliders-h"></i>
-            </li>
-        </ul>
-    </nav>
-    <!-- ************************* SideBar ************************* -->
-
     <!-- ***************** Contenido ***************** -->
     <div class="container">
         <div class="row mx-auto w-85">
             <div class="col-12 py-4 text-justify">
                 <h1 class="text-center font-weight-light d-md-block d-none display-2 my-5">Bienvenid@</h1>
                 <h1 class="text-center font-weight-light d-md-none d-sm-block display-4 my-5">Bienvenid@</h1>
-                <h5 class="text-center font-weight-light my-2">¡Hola! Mira lo que tenemos en <b>Vita</b> para ti.</h5>
+                <h5 class="text-center font-weight-light my-2">¡Hola! Mira lo que en <b>Vita</b> reunimos para ti.</h5>
             </div>
-            <div class="col-4">
-                
+        </div>
+        <div class="row mx-auto w-85">
+            <div class="col-12 col-md-4">
+                <img class="img-fluid" src="img/gallery/img-corredora.jpg" alt="img-corredora">
+                <div>
+                    <h2>Estilo de vida</h2>
+                    <p>
+                        Pura calidad.
+                    </p>
+                </div>
             </div>
-            <div class="col-4">
-                
+            <div class="col-12 col-md-4">
+                <img class="img-fluid" src="img/gallery/img-corredora.jpg" alt="img-corredora">
+                <div>
+                    <h2>Estilo de vida</h2>
+                    <p>
+                        Pura calidad.
+                    </p>
+                </div>
             </div>
-            <div class="col-4">
-                
+            <div class="col-12 col-md-4">
+                <img class="img-fluid" src="img/gallery/img-corredora.jpg" alt="img-corredora">
+                <div>
+                    <h2>Estilo de vida</h2>
+                    <p>
+                        Pura calidad.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
     <!-- ***************** Contenido ***************** -->
 
-    <button id="open" class="open-button ml-md-5 animated fadeIn">Chat</button> <!-- Chat -->
+    <!-- Chat -->
 
-    <div class="chat-popup animated fadeIn" id="chatPanel">
+    <div class="chat-popup" id="chatPanel">
         <div id="form-container" class="row h-100 card-op">
             <div id="body-msg" class="card d-flex">
                 <div class="card-header msg_head">
@@ -220,13 +177,9 @@
                             <img src="img/user_.svg" alt="user_" class="rounded-circle user_img">
                             <span class="online_icon"></span>
                         </div>
-                        <div class="col-7 align-self-center h-100">
+                        <div class="col-9 align-self-center h-100">
                             <h5 class="mb-0">Nutrición.com</h5>
                             <p class="fa-0_70 mb-0">En Linea</p>
-                        </div>
-                        <div class="col-2 text-right align-self-start">
-                            <button id="close" type="button" class="btn cancel p-0"><span
-                                    class="far fa-window-close text-white"></span></button>
                         </div>
                     </div>
                 </div>
@@ -265,84 +218,66 @@
                 </div>
             </div>
         </div>
-    </div> <!-- Chat -->
+    </div>
+    <!-- Chat -->
 
-    <div id="footer" class="container text-center mt-6">
-        <div class="row w-25 mx-auto pt-5 pb-5">
-            <div class="col-8 px-0 my-auto">
-                <p class="mb-0">
-                    Vita <i class="fas fa-leaf"></i> 2020
-                </p>
-            </div>
-            <div class="col-4 px-0">
-                <div class="container">
-                    <div class="row fa-1_25x">
-                        <div class="col-12">
-                            <a href=""><i class="fab fa-facebook"></i></a>
-                        </div>
-                        <div class="col-12">
-                            <a href=""><i class="fab fa-twitter-square"></i></a>
-                        </div>
-                        <div class="col-12">
-                            <a href=""><i class="fas fa-rss-square"></i></a>
-                        </div>
-                    </div>
+    <!-- ************************* ToolBar ************************* -->
+    <div id="pre-footer">
+        <div id="footer" class="container">
+            <div class="row text-center py-3">
+                <div class="col-2 w-20">
+                    <span class="fa fa-home fa-2x"></span>
+                </div>
+                <div class="col-2 w-20">
+                    <span class="fa fa-search fa-2x"></span>
+                </div>
+                <div class="col-2 w-20">
+                    <span class="fa fa-plus-square fa-2x"></span>
+                </div>
+                <div class="col-2 w-20">
+                    <span class="fa fa-heart fa-2x"></span>
+                </div>
+                <div class="col-2 w-20">
+                    
+                    <button id="open" class="p-0">
+                        <span class="fa fa-circle fa-2x"></span>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+    <!-- ************************* ToolBar ************************* -->
 
     <script>
-        document.getElementById("theme").classList.remove('bg-dark');
-
-        (new IntersectionObserver(function (e, o) {
-            if (e[0].intersectionRatio > 0) {
-                document.getElementById("theme").classList.add('s-bottom');
-                document.getElementById("theme").classList.remove('s-top');
-
-                document.getElementById("body-msg").classList.add('card-sm');
-                document.getElementById("body-msg").classList.add('op-25');
-            }
-            else {
-
-                document.getElementById("theme").classList.add('s-top');
-                document.getElementById("theme").classList.remove('s-bottom');
-
-                document.getElementById("body-msg").classList.remove('card-sm');
-                document.getElementById("body-msg").classList.remove('op-25');
-            };
-        })).observe(document.querySelector('.trigger'));
-
         $(document).ready(function () {
-
-            $('ul li').on('click', function() {
-                $('li').removeClass('side_on');
-                $(this).addClass('side_on');
-            });
-
-            $('#open').css("display", "none");
+            var v_chat = false;
 
             $(document).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#theme').removeClass('s-bottom');
+                    $('#theme').addClass('s-top');
+                }
+                else {
+                    $('#theme').removeClass('s-top');
+                    $('#theme').addClass('s-bottom');
+                }
+
                 if ($(this).scrollTop() > 300) {
-                    $('#open').slideDown(300);
                     $('.sidebar').fadeOut(300);
-                    //console.log("down");
                 }
                 else {
                     $('.sidebar').fadeIn(300);
-                    $('#open').slideUp(300);
-                    //console.log("up");
                 }
             });
 
             $('#open').click(function () {
-                $('#chatPanel').css('display', 'block');
-                $('#open').css('display', 'none');
-            });
-
-            $('#close').click(function () {
-                $('#chatPanel').css('display', 'none');
-                $('#open').css('display', 'block');
+                if (v_chat == true){
+                    $('#chatPanel').fadeOut(300);
+                }
+                else{
+                    $('#chatPanel').fadeIn(200);
+                }
+                v_chat = !v_chat;
             });
 
             $('#cont').click(function () {
