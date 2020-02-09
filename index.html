@@ -24,7 +24,7 @@
 <body>
     <!-- ######################### NavBar ######################### -->    
     <header> 
-		<div class="left--100" id="navbar1">
+		<div class="left--100 d-md-none" id="navbar1">
             <ul class="navbar-nav ml-auto">
                 <div class="container p-0 pl-2">
                     <div class="nav-item col-12 active hvr row w-100 mx-0 py-3 border-bottom text-center">
@@ -54,8 +54,8 @@
                         </div>
 
                         <div class="collapse col-12 dropdown dropdown-md-absolute menu1">
-                            <a class="dropdown-item hvr py-2" href="#">Recetas</a>
-                            <a class="dropdown-item hvr py-2" href="#">Estilo de vida</a>
+                            <a class="dropdown-item hvr py-2" href="nutricion/recetas/inicio.html">Recetas</a>
+                            <a class="dropdown-item hvr py-2" href="nutricion/estilo-de-vida/inicio.html">Estilo de vida</a>
                             <a class="nav-link hvr rotated categories-dropdown a-hover subnavbardrop" href="#"
                                 data-toggle="collapse" data-target=".subMenu1"> <span><b>Etapas</b></span>
                                 <i class="fas fa-chevron-circle-down"></i>
@@ -64,11 +64,11 @@
     
                         <div class="row w-100 m-0 3">
                             <div class="collapse dropdown dropdown-md-absolute mt-md-1 col-12 subMenu1">
-                                <a class="dropdown-item hvr py-2" href="nutricion/nutricion-peques.html">Niñez</a>
-                                <a class="dropdown-item hvr py-2" href="#">Adolescencia</a>
-                                <a class="dropdown-item hvr py-2" href="#">Adultez</a>
-                                <a class="dropdown-item hvr py-2" href="#">Embarazo</a>
-                                <a class="dropdown-item hvr py-2" href="#">3ra Edad</a>
+                                <a class="dropdown-item hvr py-2" href="nutricion/etapas/nutricion-peques.html">Niñez</a>
+                                <a class="dropdown-item hvr py-2" href="nutricion/etapas/nutricion-adolecentes.html">Adolescencia</a>
+                                <a class="dropdown-item hvr py-2" href="nutricion/etapas/nutricion-adultos.html">Adultez</a>
+                                <a class="dropdown-item hvr py-2" href="nutricion/etapas/nutricion-embarazo.html">Embarazo</a>
+                                <a class="dropdown-item hvr py-2" href="nutricion/etapas/nutricion-3ra-edad.html">3ra Edad</a>
                             </div>
                         </div>
                     </div>
@@ -108,6 +108,7 @@
                                 <a class="dropdown-item hvr py-2" href="nosotros/about.html">Acerca</a>
                                 <a class="dropdown-item hvr py-2" href="nosotros/filosofia.html">Filosofía</a>
                                 <a class="dropdown-item hvr py-2" href="nosotros/schedule.html">Horarios</a>
+                                <a class="dropdown-item hvr py-2" href="nosotros/feedback.html">Feedback</a>
                             </div>
                         </div>
                     </div>
@@ -116,7 +117,7 @@
         </div>
 	</header>
     
-    <nav id="theme" class="navbar navbar-expand-md nav-back navbar-light s-bottom py-2 mx-auto w-100">
+    <nav id="theme" class="navbar navbar-expand-md nav-back navbar-light s-bottom py-2 mx-auto w-100 d-md-none">
         <div class="container">
             <div class="row w-100">
                 <div class="col-10 text-left">
@@ -134,6 +135,58 @@
 
     <div class="container-fluid bg-img-half img-back img-pos-t animated fadeIn"></div>
 
+    <!-- ######################### Md NavBar ######################### -->
+    <span class="position-absolute trigger d-md-block d-none"><!-- 'stuck' --></span>
+    <nav id="theme2" class="navbar navbar-expand-md nav-back sticky-top s-bottom navbar-light py-2 mx-auto w-75 d-md-block d-none">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Vita <i class="fas fa-leaf"></i></a>
+            <button id="btn1" class="navbar-toggler navbar-toggler-right border-0 rotated" type="button" data-toggle="collapse" data-target="#navbar1">
+                <span><i class="fas fa-chevron-circle-down"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
+                    <div class="nav-item active hvr d-md-block d-none">
+                        <a class="nav-link" href="index.html"> <b>Inicio</b> </a>
+                    </div>
+                    <div class="nav-item dropdown active d-md-block d-none">
+                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop" href="#"
+                            data-toggle="collapse" data-target=".menu1"> <b>Nutrición</b> <i class="fas fa-chevron-circle-down"></i> </a>
+                        <div class="collapse dropdown dropdown-md-absolute" id="menu1">
+                            <a class="dropdown-item hvr py-2" href="nutricion/recetas/recetas.html">Recetas</a>
+                            <a class="dropdown-item hvr py-2" href="nutricion/estilo-de-vida/inicio.html">Estilo de vida</a>
+                            <a class="nav-link hvr rotated categories-dropdown a-hover subnavbardrop" href="#"
+                                data-toggle="collapse" data-target=".subMenu1"> <span><b>Etapas</b></span> <i class="fas fa-chevron-circle-down"></i></a>
+                            <div class="collapse dropdown dropdown-md-absolute mt-md-1 subMenu1">
+                                <a class="dropdown-item hvr py-2" href="nutricion/etapas/nutricion-peques.html">Niñez</a>
+                                <a class="dropdown-item hvr py-2" href="nutricion/etapas/nutricion-adolecentes.html">Adolescencia</a>
+                                <a class="dropdown-item hvr py-2" href="nutricion/etapas/nutricion-adultos.html">Adultez</a>
+                                <a class="dropdown-item hvr py-2" href="nutricion/etapas/nutricion-embarazo.html">Embarazo</a>
+                                <a class="dropdown-item hvr py-2" href="nutricion/etapas/nutricion-3ra-edad.html">3ra Edad</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown active d-md-block d-none">
+                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop2" href="#"data-toggle="collapse" data-target=".menu2">
+                            <b>Intereses</b> <i class="fas fa-chevron-circle-down"></i></a>
+                        <div class="collapse dropdown dropdown-md-absolute" id="menu2">
+                            <a class="dropdown-item hvr py-2" href="interes/blog.html">El Diario de <span class="font-italic">Vita</span></a>
+                            <a class="dropdown-item hvr py-2" href="interes/gallery-1.html">Galería</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown active d-md-block d-none">
+                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop3" href="#" data-toggle="collapse" data-target=".menu3">
+                            <b>Nosotros</b> <i class="fas fa-chevron-circle-down"></i></a>
+                        <div class="collapse dropdown dropdown-md-absolute" id="menu3">
+                            <a class="dropdown-item hvr py-2" href="nosotros/about.html">Acerca</a>
+                            <a class="dropdown-item hvr py-2" href="nosotros/filosofia.html">Filosofía</a>
+                            <a class="dropdown-item hvr py-2" href="nosotros/schedule.html">Horarios</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ######################### Md NavBar ######################### -->
 
     <!-- ***************** Contenido ***************** -->
     <div class="container">
@@ -172,12 +225,38 @@
                     </p>
                 </div>
             </div>
+            <div class="col-12 col-md-4">
+                <img class="img-fluid" src="img/gallery/img-corredora.jpg" alt="img-corredora">
+                <div>
+                    <h2>Estilo de vida</h2>
+                    <p>
+                        Pura calidad.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <img class="img-fluid" src="img/gallery/img-corredora.jpg" alt="img-corredora">
+                <div>
+                    <h2>Estilo de vida</h2>
+                    <p>
+                        Pura calidad.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <img class="img-fluid" src="img/gallery/img-corredora.jpg" alt="img-corredora">
+                <div>
+                    <h2>Estilo de vida</h2>
+                    <p>
+                        Pura calidad.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- ***************** Contenido ***************** -->
 
     <!-- Chat -->
-
     <div class="chat-popup" id="chatPanel">
         <div id="form-container" class="row h-100 card-op">
             <div id="body-msg" class="card d-flex">
@@ -257,7 +336,7 @@
                 </div>
                 <div class="col-2 w-20">
                     <li id="open" class="p-0">
-                        <i class="fa fa-circle fa-2x"></i>
+                        <i class="fas fa-comment fa-2x"></i>
                     </li>
                 </div>
             </ul>
@@ -266,6 +345,16 @@
     <!-- ************************* ToolBar ************************* -->
 
     <script>
+        new IntersectionObserver(function (e, o) {
+            if (e[0].intersectionRatio > 0) {
+                document.getElementById("theme2").classList.add("s-bottom");
+                document.getElementById("theme2").classList.remove("s-top");
+            } else {
+                document.getElementById("theme2").classList.add("s-top");
+                document.getElementById("theme2").classList.remove("s-bottom");
+            }
+        }).observe(document.querySelector(".trigger"));
+
         function openNav() {
             document.getElementById("sideNavigation").style.width = "250px";
             document.getElementById("main").style.marginLeft = "250px";
