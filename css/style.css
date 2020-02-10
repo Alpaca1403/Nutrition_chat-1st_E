@@ -1,5 +1,19 @@
 p { font-weight: 450; }
 
+a.a-none {
+    color: #000;
+    text-decoration: none;
+
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a.a-none:hover {
+    color: #501f50;
+}
+
 #pre-footer {
     height: 6rem;
 }
@@ -101,9 +115,21 @@ header .left--100 a {
 	color: rgb(46, 46, 46);
 }
 
+.user_img_side {
+    max-height: 2.5rem;
+    max-width: 2.5rem;
+    border: 2px solid #272727;
+    text-align: center;
+    position: relative;
+}
+
+.user_img_side i {
+    left: 3px;
+    position: relative;
+}
+
 /*   Sidebar   */
 
-/* -------------- Sidebar Tool---------- */
 @keyframes hue {
     from {
         filter: hue-rotate(0deg);
@@ -522,14 +548,6 @@ header .left--100 a {
 }
 
 .send_btn {
-    border-radius: 0 15px 15px 0 !important;
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border: 0 !important;
-    color: white !important;
-    cursor: pointer;
-}
-
-.search_btn {
     border-radius: 0 15px 15px 0 !important;
     background-color: rgba(0, 0, 0, 0.3) !important;
     border: 0 !important;

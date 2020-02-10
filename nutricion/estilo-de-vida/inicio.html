@@ -22,8 +22,6 @@
 </head>
 
 <body>
-    <div class="container-fluid w-100 bg-img-half img-4 img-pos-t animated fadeIn"></div>
-
     <!-- ######################### NavBar ######################### -->    
     <header> 
 		<div class="left--100 d-md-none" id="navbar1">
@@ -135,7 +133,7 @@
     </nav>
     <!-- ######################### NavBar ######################### -->
 
-    <div class="container-fluid bg-img-half img-back img-pos-t animated fadeIn"></div>
+    <div class="container-fluid w-100 bg-img-half img-4 img-pos-t animated fadeIn"></div>
 
     <!-- ######################### Md NavBar ######################### -->
     <span class="position-absolute trigger d-md-block d-none"><!-- 'stuck' --></span>
@@ -389,12 +387,7 @@
                     $('#theme').addClass('s-bottom');
                 }
 
-                if ($(this).scrollTop() > 300) {
-                    $('.sidebar').fadeOut(300);
-                }
-                else {
-                    $('.sidebar').fadeIn(300);
-                }
+                
             });
 
             $('#open').click(function () {
