@@ -1,178 +1,440 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Perfil</title>
+<html lang="es">
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/brands.min.css" />
-    <link rel="stylesheet" href="css/fontawesome.min.css" />
-    <link rel="stylesheet" href="css/regular.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../img/manzana-icon.svg" type="image/x-icon">
+    <title>Vita - Perfil</title>
 
-  <body>
-    <div class="container-fluid bar-color" id="bar">
-      <div class="row py-1">
-        <div class="col-6 text-left">
-          <p id="time">55:20</p>
-        </div>
-        <div class="col-6 text-right">
-          <i class="fa fa-signal"></i> <i class="fa fa-wifi mx-1"></i>
-          <i class="fa fa-battery-full"></i>
-        </div>
-      </div>
-    </div>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/solid.min.css">
+    <link rel="stylesheet" href="../css/regular.min.css">
+    <link rel="stylesheet" href="../css/brands.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 
-    <div class="container-fluid bar-color pt-5">
-      <div class="row py-3">
-        <div class="col-6 d-flex align-middle">
-          <i class="fa fa-arrow-left fa-2x"></i> <h4 class="px-3">Tu nombre</h4>
-        </div>
-        <div class="col-6 text-right my-auto">
-          <span class="fa fa-ellipsis-v fa-1_5 px-2"></span>
-        </div>
-      </div>
-    </div>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
 
-    <div class="container-fluid">
-      <div class="row py-5 h-100">
-        <div class="col-4 d-flex w-100">
-          <img
-            class="img-user-back rounded-circle position-absolute"
-            width="105"
-            height="105"
-          /><img class="img-user" alt="" />
+<body>
+    <!-- ######################### NavBar ######################### -->    
+    <header> 
+        <div id="protector"></div> <!-- importante -->
+
+		<div class="left--100 d-md-none" id="navbar1">
+            <ul class="navbar-nav ml-auto">
+                <div class="container p-0 pl-2">
+                    <div class="nav-item col-12 active hvr row w-100 mx-0 py-3 border-bottom text-center">
+                        <div class="nav-link col-12 p-0">
+                            <div class="container pt-2">
+                                <b class="fa-1_25x">Vita</b> <i class="fas fa-leaf fa-1_25x"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-item py-2 col-12 dropdown border-bottom active p-0 1">
+                        <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop" href="personal/perfil.html">
+                            <div class="container pt-2 d-flex">
+                                <div class="col-3">
+                                    <div class="p-0 rounded-circle user_img_side">
+                                        <i class="fas fa-user fa-2x text-center"></i>
+                                    </div>
+                                </div>
+                                <b class="col-9 align-self-center fa-1_5x font-weight-light">Usuario</b>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="nav-item py-2 col-12 dropdown active p-0 2">
+                        <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop" href="index.html">
+                            <div class="container pt-2 d-flex">
+                                <i class="fas fa-home fa-2x text-center col-3 p-0"></i> <b class="col-9 align-self-center fa-1_5x font-weight-light">Inicio</b>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="row w-100 m-0">
+                        <div class="nav-item py-2 col-12 dropdown active p-0 3">
+                            <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop" href="#"
+                                data-toggle="collapse" data-target=".menu1">
+                                <div class="container pt-2 d-flex">
+                                    <i class="fas fa-apple-alt fa-2x text-center col-3 p-0"></i> <b class="col-9 align-self-center fa-1_5x font-weight-light">Nutrición</b>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="collapse col-12 dropdown dropdown-md-absolute menu1">
+                            <a class="dropdown-item hvr py-2 fa-1_25x" href="nutricion/recetas/inicio.html">Recetas</a>
+                            <a class="dropdown-item hvr py-2 fa-1_25x" href="nutricion/estilo-de-vida/inicio.html">Estilo de vida</a>
+                            <a class="nav-link hvr rotated categories-dropdown a-hover subnavbardrop py-1 px-4 fa-1_25x" href="#"
+                                data-toggle="collapse" data-target=".subMenu1"> <b>Etapas</b>
+                                <i class="fas fa-chevron-circle-down"></i>
+                            </a>
+                        </div>
+    
+                        <div class="row w-100 m-0 4">
+                            <div class="collapse dropdown dropdown-md-absolute mt-md-1 col-12 subMenu1">
+                                <a class="dropdown-item hvr py-2 fa-1_25x" href="nutricion/etapas/nutricion-peques.html">Niñez</a>
+                                <a class="dropdown-item hvr py-2 fa-1_25x" href="nutricion/etapas/nutricion-adolecentes.html">Adolescencia</a>
+                                <a class="dropdown-item hvr py-2 fa-1_25x" href="nutricion/etapas/nutricion-adultos.html">Adultez</a>
+                                <a class="dropdown-item hvr py-2 fa-1_25x" href="nutricion/etapas/nutricion-embarazo.html">Embarazo</a>
+                                <a class="dropdown-item hvr py-2 fa-1_25x" href="nutricion/etapas/nutricion-3ra-edad.html">3ra Edad</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row w-100 m-0">
+                        <div class="nav-item py-2 col-12 dropdown active col-12 p-0 2">
+                            <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop2" href="#"
+                                data-toggle="collapse" data-target=".menu2">
+                                <div class="container pt-2 d-flex">
+                                    <i class="fas fa-book fa-2x text-center col-3 p-0"></i> <b class="col-9 align-self-center fa-1_5x font-weight-light">Intereses</b>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="row w-100 m-0">
+                            <div class="collapse dropdown dropdown-md-absolute col-12 menu2">
+                                <a class="dropdown-item hvr py-2 fa-1_25x" href="interes/blog.html">El Diario de <span
+                                        class="font-italic">Vita</span>
+                                </a>
+                                <a class="dropdown-item hvr py-2 fa-1_25x" href="interes/gallery-1.html">Galería</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row w-100 m-0 5">
+                        <div class="nav-item py-2 col-12 dropdown active col-12 p-0 3">
+                            <a class="nav-link hvr rotated categories-dropdown a-hover p-0 navbardrop3" href="#"
+                                data-toggle="collapse" data-target=".menu3">
+                                <div class="container pt-2 d-flex">
+                                    <i class="fas fa-users fa-2x text-center col-3 p-0"></i> <b class="col-9 align-self-center fa-1_5x font-weight-light">Nosotros</b>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="row w-100 m-0">
+                            <div class="collapse dropdown dropdown-md-absolute col-12 menu3">
+                                <a class="dropdown-item hvr py-2 fa-1_25x" href="nosotros/acerca.html">Acerca</a>
+                                <a class="dropdown-item hvr py-2 fa-1_25x" href="nosotros/filosofia.html">Filosofía</a>
+                                <a class="dropdown-item hvr py-2 fa-1_25x" href="nosotros/horarios.html">Horarios</a>
+                                <a class="dropdown-item hvr py-2 fa-1_25x" href="nosotros/feedback.html">Feedback</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
         </div>
-        <div class="col-8">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-4 text-center">
-                <h3>212</h3> <p class="text-black-50">Posts</p>
-              </div>
-              <div class="col-4 text-center">
-                <h3>568</h3> <p class="text-black-50">Seguidores</p>
-              </div>
-              <div class="col-4 text-center">
-                <h3>455</h3> <p class="text-black-50">Siguiendo</p>
-              </div>
+	</header>
+    
+    <nav id="theme" class="navbar navbar-expand-md nav-back navbar-light s-bottom py-2 mx-auto w-100 d-md-none">
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-10 text-left">
+                    <a class="navbar-brand px-3" href="index.html">Vita <i class="fas fa-leaf fa-1_25x"></i></a>
+                </div>
+                <div class="col-2 text-right h-100 my-auto p-0">
+                    <div id="btn1" class="navbar-right border-0 rotated h-100 menu_bar"">
+                        <span class="my-auto my-auto"><i class="fas fa-chevron-circle-down fa-1_25x"></i></span>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-              <div class="col-9">
-                <button class="w-100 btn btn-blue text-white">Seguir</button>
-              </div>
-              <div class="col-3">
-                <button class="w-100 btn btn-blue text-white"> <span class="fa fa-caret-down"></span> </button>
-              </div>
+        </div>
+    </nav>
+    <!-- ######################### NavBar ######################### -->
+
+    <nav id="theme" class="navbar navbar-expand-md nav-back navbar-light s-bottom py-2 mx-auto w-100 d-md-none">
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-10 text-left">
+                    <a class="navbar-brand px-3" href="../index.html">Vita <i class="fas fa-leaf fa-1_25x"></i></a>
+                </div>
+                <div class="col-2 text-right h-100 my-auto p-0">
+                    <div id="btn1" class="navbar-right border-0 rotated h-100 menu_bar"">
+                        <span class=" my-auto my-auto"><i class="fas fa-chevron-circle-down fa-1_25x"></i></span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </nav>
+    <!-- ######################### NavBar ######################### -->
 
-      <div class="row">
-        <div class="col-12 px-4">
-          <h6>Tú nombre</h6> <p class="text-black-50">Blog personal</p> <p>Tú descripción | Tú descripción | Etc</p>
-          <p>Tú descripción | Descripción</p> <p class="text-blue">www.insta.net.com</p>
+    <!-- ######################### Md NavBar ######################### -->
+    <span class="position-absolute trigger d-md-block d-none">
+        <!-- 'stuck' --></span>
+    <nav id="theme2"
+        class="navbar navbar-expand-md nav-back sticky-top s-bottom navbar-light py-2 mx-auto w-75 d-md-block d-none">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Vita <i class="fas fa-leaf"></i></a>
+            <button id="btn1" class="navbar-toggler navbar-toggler-right border-0 rotated" type="button"
+                data-toggle="collapse" data-target="#navbar1">
+                <span><i class="fas fa-chevron-circle-down"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
+                    <div class="nav-item active hvr d-md-block d-none">
+                        <a class="nav-link" href="../index.html"> <b>Inicio</b> </a>
+                    </div>
+                    <div class="nav-item dropdown active d-md-block d-none">
+                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop" href="../#"
+                            data-toggle="collapse" data-target=".menu1"> <b>Nutrición</b> <i
+                                class="fas fa-chevron-circle-down"></i> </a>
+                        <div class="collapse dropdown dropdown-md-absolute menu1">
+                            <a class="dropdown-item hvr py-2" href="../nutricion/recetas/recetas.html">Recetas</a>
+                            <a class="dropdown-item hvr py-2" href="../nutricion/estilo-de-vida/inicio.html">Estilo de
+                                vida</a>
+                            <a class="nav-link hvr rotated categories-dropdown a-hover subnavbardrop" href="../#"
+                                data-toggle="collapse" data-target=".subMenu1"> <span><b>Etapas</b></span> <i
+                                    class="fas fa-chevron-circle-down"></i></a>
+                            <div class="collapse dropdown dropdown-md-absolute mt-md-1 subMenu1">
+                                <a class="dropdown-item hvr py-2"
+                                    href="../nutricion/etapas/nutricion-peques.html">Niñez</a>
+                                <a class="dropdown-item hvr py-2"
+                                    href="../nutricion/etapas/nutricion-adolecentes.html">Adolescencia</a>
+                                <a class="dropdown-item hvr py-2"
+                                    href="../nutricion/etapas/nutricion-adultos.html">Adultez</a>
+                                <a class="dropdown-item hvr py-2"
+                                    href="../nutricion/etapas/nutricion-embarazo.html">Embarazo</a>
+                                <a class="dropdown-item hvr py-2" href="../nutricion/etapas/nutricion-3ra-edad.html">3ra
+                                    Edad</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown active d-md-block d-none">
+                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop2" href="../#"
+                            data-toggle="collapse" data-target=".menu2">
+                            <b>Intereses</b> <i class="fas fa-chevron-circle-down"></i></a>
+                        <div class="collapse dropdown dropdown-md-absolute menu2">
+                            <a class="dropdown-item hvr py-2" href="../interes/blog.html">El Diario de <span
+                                    class="font-italic">Vita</span></a>
+                            <a class="dropdown-item hvr py-2" href="../interes/gallery-1.html">Galería</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown active d-md-block d-none">
+                        <a class="nav-link hvr rotated categories-dropdown a-hover navbardrop3" href="../#"
+                            data-toggle="collapse" data-target=".menu3">
+                            <b>Nosotros</b> <i class="fas fa-chevron-circle-down"></i></a>
+                        <div class="collapse dropdown dropdown-md-absolute menu3">
+                            <a class="dropdown-item hvr py-2" href="../nosotros/acerca.html">Acerca</a>
+                            <a class="dropdown-item hvr py-2" href="../nosotros/filosofia.html">Filosofía</a>
+                            <a class="dropdown-item hvr py-2" href="../nosotros/horarios.html">Horarios</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
+    <!-- ######################### Md NavBar ######################### -->
 
-      <div class="row py-4">
-        <div class="col-3 text-center">
-          <span class="fa fa-circle-o fa-"></span> <p class="my-auto fa_85">Tu Nombre</p>
+    <div class="container my-6">
+        <div class="row mx-auto w-85">
+            <div class="col-4 py-4 text-center d-flex">
+                <i class="fas fa-user fa-8x d-none d-md-block text-center m-auto"></i>
+                <i class="fas fa-user fa-5x d-md-none text-center m-auto"></i>
+            </div>
+            <div class="col-8 py-4 text-justify">
+                <h1 class="text-center font-weight-light d-md-block d-none display-2 my-5">Usuario</h1>
+                <h1 class="text-center font-weight-light d-md-none d-sm-block display-4 my-5">Usuario</h1>
+                <p class="text-center fa-1_25x my-2">Tu información personal se encuentra aquí.</p>
+            </div>
         </div>
-        <div class="col-3 text-center">
-          <span class="fa fa-circle-o fa-"></span> <p class="my-auto fa_85">Tu Nombre</p>
+        <div class="row my-4 w-90 mx-auto">
+            <div class="col-12">
+                <p class="text-justify my-3">
+                    Mas información personal aquí. Puede ser un resumen de ti o una presentación para los demás
+                </p>
+                <h3 class="text-center my-4">Tus recetas</h3>
+            </div>
+
+            <a href="../soon.html" class="a-none col-12 col-md-6 my-3">
+                <div class="container p-0 d-flex">
+                    <div class="col-5">
+                        <div class="test d-flex"><i class="fa fa-camera fa-1_75x m-auto"></i></div>
+                    </div>
+                    <div class="col-7">
+                        <h5 class="my-3 font-weight-light">Receta 1</h5>
+                        <p class="text-justify my-3">
+                            Tu receta numero 1... Haz clic aquí para más información...
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="../soon.html" class="a-none col-12 col-md-6 my-3">
+                <div class="container p-0 d-flex">
+                    <div class="col-5">
+                        <div class="test d-flex"><i class="fa fa-camera fa-1_75x m-auto"></i></div>
+                    </div>
+                    <div class="col-7">
+                        <h5 class="my-3 font-weight-light">Receta 2</h5>
+                        <p class="text-justify my-3">
+                            Tu receta numero 1... Haz clic aquí para más información...
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="../soon.html" class="a-none col-12 col-md-6 my-3">
+                <div class="container p-0 d-flex">
+                    <div class="col-5">
+                        <div class="test d-flex"><i class="fa fa-camera fa-1_75x m-auto"></i></div>
+                    </div>
+                    <div class="col-7">
+                        <h5 class="my-3 font-weight-light">Receta 3</h5>
+                        <p class="text-justify my-3">
+                            Tu receta numero 1... Haz clic aquí para más información...
+                        </p>
+                    </div>
+                </div>
+            </a>
         </div>
-        <div class="col-3 text-center">
-          <span class="fa fa-circle-o fa-"></span> <p class="my-auto fa_85">Tu Nombre</p>
-        </div>
-        <div class="col-3 text-center">
-          <span class="fa fa-circle-o fa-"></span> <p class="my-auto fa_85">Tu Nombre</p>
-        </div>
-      </div>
-      <div class="row border-top border-bottom pt-3">
-        <div class="col-4 text-center">
-          <p class="text-blue"><a href="#">Llamadas</a></p>
-        </div>
-        <div class="col-4 text-center border-left border-right">
-          <p class="text-blue"><a href="#">Dirección Email</a></p>
-        </div>
-        <div class="col-4 text-center">
-          <p class="text-blue"><a href="#">Dirección</a></p>
-        </div>
-      </div>
-      <div class="row py-3 pb-5">
-        <div class="col-3 text-center">
-          <span class="fa fa-border-all fa-2x"></span>
-        </div>
-        <div class="col-3 text-center">
-          <span class="far fa-images fa-2x"></span>
-        </div>
-        <div class="col-3 text-center">
-          <span class="far fa-star fa-2x"></span>
-        </div>
-        <div class="col-3 text-center">
-          <span class="far fa-id-badge fa-2x"></span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4 text-center p-1">
-          <div class="back-p-x m-auto ">
-            <i class="fa fa-camera fa-2x m-5"></i>
-          </div>
-        </div>
-        <div class="col-4 text-center p-1">
-          <div class="back-p-x">
-            <i class="fa fa-camera fa-2x m-5"></i>
-          </div>
-        </div>
-        <div class="col-4 text-center p-1">
-          <div class="back-p-x">
-            <i class="fa fa-camera fa-2x m-5"></i>
-          </div>
-        </div>
-        <div class="col-4 text-center p-1">
-          <div class="back-p-x">
-            <i class="fa fa-camera fa-2x m-5"></i>
-          </div>
-        </div>
-        <div class="col-4 text-center p-1">
-          <div class="back-p-x">
-            <i class="fa fa-camera fa-2x m-5"></i>
-          </div>
-        </div>
-        <div class="col-4 text-center p-1">
-          <div class="back-p-x">
-            <i class="fa fa-camera fa-2x m-5"></i>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div id="footer" class="container-fluid">
-      <div class="row text-center py-3">
-        <div class="col-2 w-20">
-          <span class="fa fa-home fa-2x"></span>
+    <!-- ************************* ToolBar ************************* -->
+    <div id="pre-footer">
+        <div id="footer" class="container-fluid toolbar">
+            <ul class="row text-center py-3 px-0">
+                <div class="col-2 w-20">
+                    <a href="../index.html" class="a-none p-0">
+                        <i class="fa fa-home fa-2x"></i>
+                    </a>
+                </div>
+                <div class="col-2 w-20">
+                    <li class="p-0">
+                        <i class="fa fa-search fa-2x"></i>
+                    </li>
+                </div>
+                <div class="col-2 w-20">
+                    <li class="p-0">
+                        <i class="fa fa-plus-square fa-2x"></i>
+                    </li>
+                </div>
+                <div class="col-2 w-20">
+                    <li class="p-0">
+                        <i class="fa fa-heart fa-2x"></i>
+                    </li>
+                </div>
+                <div class="col-2 w-20">
+                    <li id="open" class="p-0">
+                        <i class="fas fa-comment fa-2x"></i>
+                    </li>
+                </div>
+            </ul>
         </div>
-        <div class="col-2 w-20">
-          <span class="fa fa-search fa-2x"></span>
-        </div>
-        <div class="col-2 w-20">
-          <span class="fa fa-plus-square fa-2x"></span>
-        </div>
-        <div class="col-2 w-20">
-          <span class="fa fa-heart fa-2x"></span>
-        </div>
-        <div class="col-2 w-20">
-          <span class="fa fa-circle fa-2x"></span>
-        </div>
-      </div>
     </div>
+    <!-- ************************* ToolBar ************************* -->
 
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery-3.4.1.js"></script>
-  </body>
+    <<script>
+        new IntersectionObserver(function (e, o) {
+            if (e[0].intersectionRatio > 0) {
+                document.getElementById("theme2").classList.add("s-bottom");
+                document.getElementById("theme2").classList.remove("s-top");
+            } else {
+                document.getElementById("theme2").classList.add("s-top");
+                document.getElementById("theme2").classList.remove("s-bottom");
+            }
+        }).observe(document.querySelector(".trigger"));
+
+        function openNav() {
+            document.getElementById("sideNavigation").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("sideNavigation").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+        $(document).ready(function () {
+            var v_chat = false;
+            var v_side = false;
+
+ 
+            $('.menu_bar, #protector').click(function(){
+                if(v_side == false){
+                    $('#navbar1').animate({ left: '0' });
+                    $('#protector').fadeIn(300);
+                } 
+                else {
+                    $('#navbar1').animate({ left: '-100%' });
+                    $('#protector').fadeOut(300);
+                }
+                v_side = !v_side;
+            });
+
+            $(document).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#theme').removeClass('s-bottom');
+                    $('#theme').addClass('s-top');
+                }
+                else {
+                    $('#theme').removeClass('s-top');
+                    $('#theme').addClass('s-bottom');
+                }
+            });
+
+            $('#open').click(function () {
+                if (v_chat == true){
+                    $('#chatPanel').fadeOut(300);
+                }
+                else{
+                    $('#chatPanel').fadeIn(200);
+                }
+                v_chat = !v_chat;
+            });
+
+            $('#cont').click(function () {
+                $('.menu1').removeClass('show');
+                $('.menu2').removeClass('show');
+                $('.menu3').removeClass('show');
+                $('#navbar1').removeClass('show');
+            });
+
+            $('.dropdown-item').click(function () {
+                $('.menu1').removeClass('show');
+                $('.menu2').removeClass('show');
+                $('.menu3').removeClass('show');
+                $('#navbar1').removeClass('show');
+            });
+
+            $('#btn1').click(function () {
+                if (!($('#navbardrop').hasClass('collapsed')) || !($('#navbardrop2').hasClass('collapsed')) || !($('#navbardrop3').hasClass('collapsed'))) {
+                    $('.subMenu1').removeClass('show');
+                    $('.menu1').removeClass('show');
+                    $('.menu2').removeClass('show');
+                    $('.menu3').removeClass('show');
+                }
+            });
+
+            $('.navbardrop').click(function () {
+                if (!$('.navbardrop2').hasClass('collapsed') || !$('.navbardrop3').hasClass('collapsed')) {
+                    $('.menu2').removeClass('show');
+                    $('.menu3').removeClass('show');
+                    $('.subMenu1').removeClass('show');
+                }
+            });
+
+            $('.navbardrop2').click(function () {
+                if (!$('.navbardrop').hasClass('collapsed') || !$('.navbardrop3').hasClass('collapsed')) {
+                    $('.menu1').removeClass('show');
+                    $('.menu3').removeClass('show');
+                    $('.subMenu1').removeClass('show');
+                }
+            });
+
+            $('.navbardrop3').click(function () {
+                if (!$('.navbardrop').hasClass('collapsed') || !$('.navbardrop2').hasClass('collapsed')) {
+                    $('.menu1').removeClass('show');
+                    $('.menu2').removeClass('show');
+                    $('.subMenu1').removeClass('show');
+                }
+            });
+        });
+    </script>
+
+</body>
+
 </html>
