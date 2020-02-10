@@ -255,10 +255,15 @@
 
                 <div class="my-2">
                     <p>
-                        Noemi!!!
+                        Hola mi nombre es Noemi, mi objetivo principal es motivar e inspirar a las personas, para que adopten un 
+                        estilo de vida  saludable y sientan la satisfacción de elegir  un  camino hacia el cambio de hábitos. 
+                        Estoy convencida que los cambios se construyen sobre bases sólidas, mediante la educación y concientización 
+                        del problema. Deseo satisfacer las necesidades de nuestros clientes, mediante el armado y asesoramiento de 
+                        proyectos a medida y ser reconocidos como la mejor empresa de servicio de salud y prevención con nuestro Programa.
                     </p>
                     <p>
-                        El relleno!!!
+                        Mis platillos favoritos son los <span class="objetive-rose">Tacos de Espagueti</span>, la 
+                        <span class="objetive-rose">Salsa Tartara</span> y el <span class="objetive-rose">Arroz a la Mexicana</span>.
                     </p>
                 </div>
 
@@ -291,6 +296,18 @@
                     <p class="text-center my-6">
                         <span><a href="form.html" class="objetive-link" target="_blank" rel="noopener noreferrer">📄 ¡Adelante, vamos a llenar ese formulario! 📄</a></span>
                     </p>
+                </div>
+
+                <div class="my-6">
+                    <h5 class="text-center font-weight-light my-5 d-md-block d-none fa-3x">Nuestras oficinas principales</h5>
+                    <h5 class="text-center font-weight-light my-5 d-block d-md-none fa-1_75x">Nuestras oficinas principales</h5>
+
+                    <p class="text-center">
+                        ¿Nos quieres visitar personalmente? <br>
+                        ¡Nos ubicamos justo aquí!
+                    </p>
+
+                    <div id="map" class="w-100 h-500px"></div>
                 </div>
             </div>
         </div>
@@ -385,7 +402,19 @@
     </div>
     <!-- ************************* ToolBar ************************* -->
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV5OPnO6un4hW9D0rarfidKPPNm7-M2XQ&callback=initMap" async defer></script>
     <script>
+        var map;
+
+        function initMap() {
+            var coordenadas = { lat: 22.077753, lng: -102.273298 };
+
+            var mapa = new google.maps.Map(document.getElementById('map'), 
+            { zoom: 12, center: coordenadas });
+
+            var maker = new google.maps.Marker({position: coordenadas, map: mapa});
+        }
+
         new IntersectionObserver(function (e, o) {
             if (e[0].intersectionRatio > 0) {
                 document.getElementById("theme2").classList.add("s-bottom");
